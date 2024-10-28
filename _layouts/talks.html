@@ -1,0 +1,88 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+{% include _head.html %}
+</head>
+
+<body class="page">
+
+{% include _browser-upgrade.html %}
+
+{% include _navigation.html %}
+
+{% if page.image.feature %}
+  <div class="image-wrap">
+  <img src=
+    {% if page.image.feature contains 'http://' %}
+      "{{ page.image.feature }}"
+    {% elsif page.image.feature contains 'https://' %}
+      "{{ page.image.feature }}"
+    {% else %}
+      "{{ site.url }}/images/{{ page.image.feature }}"
+    {% endif %}
+  alt="{{ page.title }} feature image">
+  {% if page.image.credit %}
+    <span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
+  {% endif %}
+  </div><!-- /.image-wrap -->
+{% endif %}
+
+<div id="main" role="main">
+  <div class="article-author-side">
+    {% include _author-bio.html %}
+  </div>
+  <article>
+    <div class="article-wrap">
+      {{ content }}
+
+<h3 style="margin-bottom:0px;padding-top:10px;">Seminar Talks</h3>
+<ul>
+	<li><b>Scaling Human-Centric Trustworthy Foundation Model Reasoning</b></li>
+	KAIST. TBA, Fall 2024. <br>
+	Tsinghua. Oct 2024. <br>
+	Fudan. Oct 2024.
+	<li><b>Towards Helpful, Honest, and Harmless Information Communication with Human-Model Alignment and Multi-Cultural Understanding</b></li>
+  National University of Singapore. Feb 2024.
+  <br>
+  Peking University. Jan 2024.
+  <li><b>Harmless, Helpful, and Honest Language Model Agents</b></li>
+  Hong Kong University. Dec 2023.
+  <li><b>Towards Healthier Information Communication through Misinformation Detection, Social Norm Discovery, and Cross-Culture Understanding</b></li>
+  Renmin University. Aug 2023.
+  <li><b>Alzheimer’s Brain MRI Classification and Disease Forecasting</b></li>
+  Harvard Medical School. Oct 2019.
+</ul>
+
+<h3 style="margin-bottom:0px;padding-top:5px;">Tutorials</h3>
+<ul>
+  <li><b>The Battlefront of Combating Misinformation and Coping with Media Bias</b></li>
+  KDD'22
+  <br>
+  AACL'22
+</ul> 
+
+<h3 style="margin-bottom:0px;padding-top:5px;">Panels</h3>
+<ul>
+  <li><b>“The role of semantics in the age of LLMs” -- panel discussion</b></li>
+   SEM 2024 (co-hosted with NAACL). June 2024.
+</ul>
+
+</div><!-- /.article-wrap -->
+    {% if site.disqus_shortname and page.comments %}
+      <section id="disqus_thread"></section><!-- /#disqus_thread -->
+    {% endif %}
+  </article>
+</div><!-- /#index -->
+<div class="footer-wrap">
+  <footer>
+    {% include _footer.html %}
+  </footer>
+</div><!-- /.footer-wrap -->
+
+{% include _scripts.html %}
+
+</body>
+</html>

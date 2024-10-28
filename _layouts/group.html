@@ -1,0 +1,87 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+{% include _head.html %}
+</head>
+
+<body class="page">
+
+{% include _browser-upgrade.html %}
+
+{% include _navigation.html %}
+
+{% if page.image.feature %}
+  <div class="image-wrap">
+  <img src=
+    {% if page.image.feature contains 'http://' %}
+      "{{ page.image.feature }}"
+    {% elsif page.image.feature contains 'https://' %}
+      "{{ page.image.feature }}"
+    {% else %}
+      "{{ site.url }}/images/{{ page.image.feature }}"
+    {% endif %}
+  alt="{{ page.title }} feature image">
+  {% if page.image.credit %}
+    <span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
+  {% endif %}
+  </div><!-- /.image-wrap -->
+{% endif %}
+
+<div id="main" role="main">
+  <div class="article-author-side">
+    {% include _author-bio.html %}
+  </div>
+  <article>
+    <div class="article-wrap">
+      {{ content }}
+
+<h3 style="margin-bottom:0px;padding-top:10px;">PhD/MPhil Students</h3>
+<ul>
+  <li><a href="https://aclanthology.org/people/z/zhitao-he/" target="_blank">Zhitao He</a>, PhD student</li>
+  <li><a href="" target="_blank">Zhiyuan Fan</a>, MS student</li>
+  <li><a href="https://lukahhcm.github.io/" target="_blank">Yuchen Huang</a>, PhD student (HKPFS fellow)</li>
+  <li><a href="https://scholar.google.com/citations?user=5yHRd6kAAAAJ" target="_blank">Dadi Guo</a>, PhD student</li>
+  <li><a href="https://joeying1019.github.io/" target="_blank">Shijue Huang</a> (incoming)</li>
+  <li><a href="https://zhaochen0110.github.io/" target="_blank">Zhaochen Su</a> (incoming, coadvised)</li>
+</ul>
+
+<h3 style="margin-bottom:0px;padding-top:10px;">Ongoing Mentorships (🌐 Scheme) </h3>
+<ul>
+  <li>Jianshu Zhang, HKUST*</li>
+  <li>Yubo Zhao, HKUST</li>
+  <li>Yikai Wang, UCLA</li>
+  <li>Jiacheng Lu, SJTU</li>
+  <li>Jaewoo Lee, KAIST</li>
+</ul>
+
+<h3 style="margin-bottom:0px;padding-top:10px;">Former Students and Alumni</h3>
+
+<ul>
+  <li><a href="https://shujinwu-0814.github.io/" target="_blank">Shujin Wu</a> (USC) ⭐⭐⭐⭐⭐ </li>
+  <li><a href="https://qiancheng0.github.io/" target="_blank">Cheng Qian</a> (Tsinghua->UIUC PhD)</li>
+  <li>Ke Yang (Tsinghua->UIUC PhD)</li>
+  <li>Xueqing Wu (UIUC->UCLA PhD)</li>
+  <li>and more</li>
+</ul>
+
+<small><b>Prospective students:</b> I am always looking to recruit highly motivated students across all levels (post-docs, PhDs, masters, undergrads, and visitors). If you are interested, please fill out this <a href="https://forms.gle/eAHKCMVuso9n9AqE7" target="_blank">online form</a> and send an email to <i>renAI.lab101 @ gmail.com</i>. The timestamp of this announcement is Autumn Moon Festival.</small>
+
+</div><!-- /.article-wrap -->
+    {% if site.disqus_shortname and page.comments %}
+      <section id="disqus_thread"></section><!-- /#disqus_thread -->
+    {% endif %}
+  </article>
+</div><!-- /#index -->
+<div class="footer-wrap">
+  <footer>
+    {% include _footer.html %}
+  </footer>
+</div><!-- /.footer-wrap -->
+
+{% include _scripts.html %}
+
+</body>
+</html>
