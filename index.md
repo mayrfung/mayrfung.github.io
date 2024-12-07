@@ -13,5 +13,5 @@ My research focus centers around <b>socially-situated human-centered trustworthy
 
 <br>
 <b>Recent News:</b>
-* <b>[Nov]</b> Excited to be delivering an <b>invited talk</b> on <i>"Scaling Human-Centric Trustworthy Foundation Model Reasoning"</i> at <b>Yale NLP Seminar</b>!
+* <b>[Nov]</b> Excited to be delivering an <b>invited talk</b> on <i>"Scaling Human-Centric Trustworthy Foundation Model Reasoning"</i> at <b>Yale Foundations of Data Science (FDS) Seminar</b>!
 * <b>[Nov]</b> We're organizing the  <a href="https://sites.google.com/view/ai4research2024" target="_blank"><b>AAAI'25 Workshop on AI4Research</b></a> - submit your research by Nov 22!
