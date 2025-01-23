@@ -11,9 +11,8 @@ I am a tenure-track assistant professor at the <a href="https://cse.hkust.edu.hk
 <br><br>
 My research focus centers around <b>human-centered trustworthy NLP/AI</b> with <b>multimedia knowledge reasoning</b> capability and <b>scalable alignment</b> principles. My work on fundamental model architectural mechanisms and frameworks empowering <b><b><i>helpful</i></b>, <i><b>honest</b></i>, and <i>harmless</i></b> information communication has been recognized by <b>three best/outstanding paper awards</b> at <b>top AI/NLP conferences</b>.
 <br><br>
-📣 <b>As of the 2025 new year, we are actively recruiting students to apply for our PhD and MPhil positions. HKUST undergraduate students are also welcome to take part in an independent study with our team. Please fill out <a href="https://forms.gle/S6fe7xoAxuHwV4VC6" target="_blank"><b>this form</b></a> if you're interested!</b>
+📣 <b>As of the 2025 new year, we are actively recruiting students for our PhD and MPhil positions. HKUST undergraduates are also welcome to take an independent study course with us. Please fill out <a href="https://forms.gle/S6fe7xoAxuHwV4VC6" target="_blank"><b>this form</b></a> if you're interested!</b>
 
 <br>
 <b>Recent News:</b>
 * <b>[Nov]</b> Excited to be delivering an <b>invited talk</b> on <i>"Scaling Human-Centric Trustworthy Foundation Model Reasoning"</i> at the <b>Yale Foundations of Data Science (FDS) Seminar</b>!
-* <b>[Nov]</b> We're organizing the  <a href="https://sites.google.com/view/ai4research2024" target="_blank"><b>AAAI'25 Workshop on AI4Research</b></a> - submit your research by Nov 22!
