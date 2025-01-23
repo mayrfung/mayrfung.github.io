@@ -10,8 +10,8 @@ image:
 I am a tenure-track assistant professor at the <a href="https://cse.hkust.edu.hk/" target="_blank"><b>Hong Kong University of Science and Technology</b></a>, and director of the <b>renAI (Human-Centric NLP) Lab</b>. I completed my <b>Ph.D.</b> studies at the <a href="https://cs.illinois.edu/" target="_blank"><b>University of Illinois</b></a>, where I have been fortunately advised by <a href="https://blender.cs.illinois.edu/hengji.html" target="_blank"><b>Prof. Heng Ji</b></a>.
 <br><br>
 My research focus centers around <b>human-centered trustworthy NLP/AI</b> with <b>multimedia knowledge reasoning</b> capability and <b>scalable alignment</b> principles. My work on fundamental model architectural mechanisms and frameworks empowering <b><b><i>helpful</i></b>, <i><b>honest</b></i>, and <i>harmless</i></b> information communication has been recognized by <b>three best/outstanding paper awards</b> at <b>top AI/NLP conferences</b>.
-
-📣 As of the 2025 new year, We are actively recruiting students to apply for our PhD and MPhil positions. HKUST students are also welcome to take part in an independent study with our team. Fill out this form if you're interested!
+<br><br>
+📣 <b>As of the 2025 new year, We are actively recruiting students to apply for our PhD and MPhil positions. HKUST students are also welcome to take part in an independent study with our team. Fill out this form if you're interested!</b>
 
 <br>
 <b>Recent News:</b>
