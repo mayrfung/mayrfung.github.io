@@ -11,6 +11,8 @@ I am a tenure-track assistant professor at the <a href="https://cse.hkust.edu.hk
 <br><br>
 My research focus centers around <b>human-centered trustworthy NLP/AI</b> with <b>multimedia knowledge reasoning</b> capability and <b>scalable alignment</b> principles. My work on fundamental model architectural mechanisms and frameworks empowering <b><b><i>helpful</i></b>, <i><b>honest</b></i>, and <i>harmless</i></b> information communication has been recognized by <b>three best/outstanding paper awards</b> at <b>top AI/NLP conferences</b>.
 
+📣 As of the 2025 new year, We are actively recruiting students to apply for our PhD and MPhil positions. HKUST students are also welcome to take part in an independent study with our team. Fill out this form if you're interested!
+
 <br>
 <b>Recent News:</b>
 * <b>[Nov]</b> Excited to be delivering an <b>invited talk</b> on <i>"Scaling Human-Centric Trustworthy Foundation Model Reasoning"</i> at the <b>Yale Foundations of Data Science (FDS) Seminar</b>!
