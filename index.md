@@ -16,6 +16,6 @@ My research focus centers around <b>human-centered trustworthy AI/NLP</b> with <
 <br>
 <b>Recent News:</b>
 <br>
-* <b>[Feb]</b> I'll be serving as the new <b>DEO</b> representative of the HKUST CSE Department. As commitment to this role, I'll be trying something new and also holding open door office hour every Friday afternoon 4pm; students are welcome to stop by and chat about anything in mind (courses, career planning, prospective research opportunities, etc). 
+* <b>[Feb]</b> I'll be serving as the new <b>DEO</b> representative of the HKUST CSE Department. As commitment to this role, I'll be trying something new and also holding open door office hour every Friday afternoon 4-4:30pm; students are welcome to stop by and chat about anything in mind (courses, career planning, prospective research opportunities, etc). 
 <br>
 * <b>[Nov]</b> Excited to be delivering an <b>invited talk</b> on <i>"Scaling Human-Centric Trustworthy Foundation Model Reasoning"</i> at the <b>Yale Foundations of Data Science (FDS) Seminar</b>!
