@@ -1,4 +1,3 @@
-
 ---
 layout: splash
 title: "COMP4901b"
