@@ -1,12 +1,12 @@
 
 ---
 layout: splash
-title: "COMP4221"
+title: "COMP4901b"
 permalink: /teaching/comp4901b
 author_profile: false
 ---
 
-# Natural Language Processing (NLP)
+# Large Language Models
 
 **COMP 4901B, Fall 2026**  
 **The Hong Kong University of Science and Technology**  
