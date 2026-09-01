@@ -24,7 +24,7 @@ L1, Regular Lectures: TTh 4:30-5:50pm, Room 2404 (Lift 17-18)
 ### Course Staff and Office Hours
 Instructor: Yi R. (May) Fung
 
-TAs: [Zhitao He](https://scholar.google.com/citations?user=ULvoYXgAAAAJ), [Zhaochen Su](https://zhaochen0110.github.io/), [Shijue Huang](https://joeying1019.github.io/).
+TAs: [Junteng Liu](), [Yue Ma](), [Changxuan Fan]().
 
 <b> Office Hours </b>
 
