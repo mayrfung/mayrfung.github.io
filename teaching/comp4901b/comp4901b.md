@@ -11,8 +11,8 @@ author_profile: false
 **The Hong Kong University of Science and Technology**  
 [**Yi R. (May) Fung**](https://mayrfung.github.io)
 
-**Course description**: This course provides an introduction to the tasks, models and algorithms of natural language processing (NLP) including the fundamental NLP tasks and models (such as language model, text classification, word vectors, sequence labelling, etc.), and several typical NLP applications (such as question answering, dialogue systems and machine translation, etc.), and the linguistic structure annotation (such as constituency parsing and dependency parsing). The course also introduces some advanced topics such as pre-trained language models and their prompt tuning and instruct tuning methods to give the students more perspectives of the NLP
-industry.
+**Course description**: This is an undergraduate-level course to cover the basics and latest advances about large language models. This course will start with the basics of language models, and then cover the latest advances in large language models. It will include core techniques on developing LLMs such as DeepSeek-R1, Qwen, LLama, etc. Applications and potential risks of LLMs will also be covered. Throughout this course, you are expected to (1) know the basic principles of language models and how it works; (2) be able to use LLMs and know how to tame it in practice; (3) understand the core development techniques and are able to train language models in relatively simple scenarios.
+
 
 ## Course Information
 
