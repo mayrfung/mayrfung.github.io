@@ -55,33 +55,30 @@ The lecture schedule below is tentative and subject to change; there may also be
 
 | Slides | Date | Topic | Readings | Assignments |
 |:---|:---|:---|:---|:---|
-| [Lecture 0](https://drive.google.com/file/d/1wfNN5rs4ycs55Gg8GKwHHqhq-tSiee78/view?usp=sharing) | 02/02 Mon | Course Overview, Intro to NLP, and Basics Review | [DeepSeek-R1 Tech Report (quick skim only)](https://arxiv.org/abs/2412.19437) | |
-| [Lecture 1](https://drive.google.com/file/d/1yPo_-vpg7sjcTjLGhPaZfNWuf7A1s5WZ/view?usp=sharing) | 06/02 Fri | N-gram Language Models | J&M Ch 2-3  | |
-| [Lecture 2](https://drive.google.com/file/d/19EXK6weBFevKRoi8ZS5Lw04EJ15homfw/view?usp=sharing) | 09/02 Mon | Word Embeddings | J&M Ch 6  | |
-| [Lecture 3](https://drive.google.com/file/d/19qD57dGGuoUoNGHbK1JlblxgCWnfFDNC/view?usp=sharing) | 13/02 Fri | Text Classification | J&M Ch 4  | **[HW1 Out](https://drive.google.com/file/d/1vcV2CcAhGKUKXHWMxQA9ZvP76QSiwV-4/view?usp=sharing)** (5%)  |
-| [Lecture 4](https://drive.google.com/file/d/1Gt3qYC974oV8oY_qbnDHAOtCVNjBhOgv/view?usp=sharing) | 16/02 Mon | Neural Networks for NLP | J&M Ch 6 | |
-| [Lecture 5](https://drive.google.com/file/d/1OKSzdNpf1G2p3e4TVjMMRsqdd8i9sGtm/view?usp=sharing) | 20/02 Fri | Pre-trained LMs (BERT/GPT) | J&M Ch 7, 10  | |
-| [Lecture 6](https://drive.google.com/file/d/1j90Sm8NOFP14fjCnXhohYq_UYQsgAtHv/view?usp=sharing) [pt II](https://drive.google.com/file/d/1w6LSzdX_GvxLxHbwSLLfi6RK-e4xqHdp/view?usp=sharing) | 23/02 Mon | Model Prompting and In-Context Learning | J&M Ch 9  | |
-| [Lecture 7](https://drive.google.com/file/d/1rh0kAHi8pPT_3nKjTxUa9SBvfD64O6oI/view?usp=sharing) | 27/02 Fri | Attention Mechanism | J&M Ch 8  | **HW1 Due** |
-| [Lecture 8](https://docs.google.com/presentation/d/1JsVYC-5X38LK7boMa1YNVX-47upj15PP/edit?usp=sharing&ouid=108947478547950144581&rtpof=true&sd=true) | 02/03 Mon | Information Extraction, From Entities to Beyond | J&M Ch 14  | |
-| [Lecture 9](https://docs.google.com/presentation/d/11AuJqCQsqDAR4woZ_Qxn0dJ9jtqT1bct/edit?usp=sharing&ouid=108947478547950144581&rtpof=true&sd=true) [pt II](https://drive.google.com/file/d/15YlguQskjZuWF8ZWeASL9wDZALY-B_Y8/view?usp=sharing) | 06/03 Fri | Information Extraction, Relation and Event | J&M Ch 20  | **[HW2 Out](https://docs.google.com/document/d/1goC-7iKazkIlTWxL6tBWbcWpWM8KWU-s/edit?usp=sharing&ouid=108947478547950144581&rtpof=true&sd=true)**  |
-| [Lecture 10]() | 09/03 Mon | Question Answering, Information Retrieval, and In-Class Grounded Exercises | J&M Ch 11  | |
-| [Lecture 11](https://drive.google.com/file/d/1AfAPEgbVnroWbV5QGMNyQkiUizBncymA/view?usp=sharing) | 13/03 Fri | LM Generation| J&M Ch 11  | |
-| [Lecture 12](https://drive.google.com/file/d/1OCOTINWhOPY66UC2t7CzTrZLjnaXUXza/view?usp=sharing) | 16/03 Mon | Evaluation Benchmark | [HELM](https://arxiv.org/abs/2211.09110) | |
-| Exam | 20/03 Fri | Mid-term Exam (mock) | | **HW2 Due**  |
-| [Lecture 13](https://docs.google.com/presentation/d/1hVnOtS2I80YaT6KRg-w_JeUwCPH38iZa/edit?usp=sharing&ouid=108947478547950144581&rtpof=true&sd=true) | 23/03 Mon | Multi-Agents and Tool Learning | J&M Ch 14  |  |
-| [Lecture 14](https://drive.google.com/file/d/14kwgizb65rVTVcDfJTKLurXcYxSBieeS/view?usp=sharing) | 27/03 Fri | Towards Greater Social and Cognitive Intelligence | J&M Ch 15  | |
-| [Lecture 15](https://drive.google.com/file/d/1cE8tK87Jb3J4yER-9rO6NKUA361OU32g/view?usp=sharing) | 30/03 Mon | Multimodal LLM | | |
-| **Holiday** | 03/04 Fri | **Public Holiday (Good Friday)** | | |
-| **Holiday** | 06/04 Mon | **Public Holiday (Easter Monday)** | | |
-| [Lecture 15b](https://drive.google.com/file/d/11eIy8D8EjiHRV2YQw2OCHBvBsfDNBB-X/view?usp=sharing) | 10/04 Fri | Efficient LLM Adaptation | Recent Papers [cite: 14] | **Project Out** (20%)  |
-| [Lecture 16](https://drive.google.com/file/d/1nB_D3u5L2KRkUt32bpizUbRhfkwgv_0Z/view?usp=sharing) | 13/04 Mon | LLM Security | | |
-| [Lecture 17](https://docs.google.com/presentation/d/1tsQlT4y_d5EXGNrsGjHbLi8I2KVsFcUD/edit?usp=sharing&ouid=108947478547950144581&rtpof=true&sd=true) | 17/04 Fri | AI for Research, AI for Science | | |
-| [Lecture 18](https://docs.google.com/presentation/d/1Ccqzq5CQ9uMeqE_oku2H6dWYz-2AteOF/edit?usp=sharing&ouid=108947478547950144581&rtpof=true&sd=true) | 20/04 Mon | ASR Language and Speech Modeling | J&M Ch 12  | |
-| [Lecture 19](https://drive.google.com/file/d/10tEzAzD-G_cIEMprPBV4a2rVbXX_alSk/view?usp=sharing) | 24/04 Fri | Novel Architectures (e.g., diffusion LLMs) | |  |
-| [Lecture 20]([DeepSeekV4 and LLM Agent Evolution](https://drive.google.com/file/d/1SIYRXTKuvd3LTQmbMgiIVTGH9NiKDsk2/view?usp=sharing)) | 27/04 Mon | DeepSeekV4 and LLM Agent Evolution | | |
-| **Holiday** | 01/05 Fri | **Public Holiday (Labor Day)** | | |
-| [Lecture 21](https://drive.google.com/file/d/1xpqns4cDj3DOIke3L8Uh-AGho1kFD_ke/view?usp=sharing) | 04/05 Mon | LLM Continual Learning and Agent Evolution | | |
-| [Lecture 22](https://drive.google.com/file/d/1Vjnew8F4NK_1PmNNDHxk6PJKy66Rmi4Y/view?usp=sharing)| 08/05 Fri | The Future of NLP and Course Recap | | **Project Due** (20%), additional 2 day extension due to Canvas outdage  |
-| **Exam** | **16/05 8:30AM** | **Final Exam (60%)** | |  |
-
+| Lecture 0 | 02/09 Wed | Introduction to Large Language Models | | |
+| Lecture 1 | 04/09 Fri | Machine Learning Basics | | |
+| Lecture 2, annotated2 | 09/09 Wed | Language Model | | |
+| Lecture 3, annotated3 | 11/09 Fri | Neural Networks and Transformers | Annotated Transformer, Illustrated Transformer | |
+| Lecture 4, annotated4 | 16/09 Wed | Transformers | Annotated Transformer, Illustrated Transformer | |
+| Lecture 5, annotated5 | 18/09 Fri | Pretraining: Objectives and Data Curation | | |
+| | 22/09 Tue | | | HW1 Out |
+| Lecture 6, annotated6 | 23/09 Wed | Adapting Large Language Models | | |
+| Lecture 7 | 25/09 Fri | Evaluation of Large Language Models | | |
+| Lecture 8, annotated8 | 30/09 Wed | Instruction Tuning and Alignment | | |
+| **Holiday** | 01/10 Thu | **National Day** | | |
+| Lecture 9, annotated9 | 02/10 Fri | Instruction Tuning and Alignment | | **HW1 Due** |
+| Lecture 10, annotated10 | 07/10 Wed | Reinforcement Learning Basics | | |
+| Lecture 11, annotated11 | 09/10 Fri | Reinforcement Learning from Human Feedback (RLHF) | | |
+| Lecture 12, annotated12 | 14/10 Wed | Scaling Up LLMs: Scaling Laws | | **HW2 Out** |
+| Lecture 13, annotated13 | 16/10 Fri | Chain-of-Thought Reasoning | | |
+| **Holiday** | 19/10 Mon | **The day following Chung Yeung Festival** | | |
+| Lecture 14, annotated14 | 21/10 Wed | Deep Reasoning Models | | |
+| Lecture 15, annotated15 | 23/10 Fri | Synthetic Data Training: Data Synthesis and Distillation | | |
+| Lecture 16, annotated16 | 28/10 Wed | LLM Agents | | **HW2 Due** |
+| Lecture 17, annotated17 | 30/10 Fri | LLM Agents | | **HW3 Out** |
+| Lecture 18, annotated18 | 04/11 Wed | LLM Bias and Safety | | |
+| Lecture 19, annotated19 | 06/11 Fri | LLM Safety, Attack, and Defense | | |
+| | 10/11 Tue | | | **HW3 Due** |
+| Lecture 20, annotated20 | 11/11 Wed | Hallucination and RAG | | |
+| Lecture 21, annotated21 | 13/11 Fri | RAG and MoE LLMs | | |
+| Lecture 22, annotated22 | 18/11 Wed | MoE LLMs, Vibe Coding, and Review | | |
