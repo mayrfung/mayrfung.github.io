@@ -16,7 +16,7 @@ author_profile: false
 
 ## Course Information
 
-[Course Logistics (Grading, Policy, etc.)](https://drive.google.com/file/d/18XzISnOC7EwEC4Q6lUHA_jaerDnQ3FIv/view?usp=sharing)
+[Course Logistics (Grading, Policy, etc.)](https://docs.google.com/document/d/1Uww5nebfkGph2otJXelZGeCYISAt7uns/edit?usp=sharing&ouid=108947478547950144581&rtpof=true&sd=true)
 
 ### Time and Location
 L1, Regular Lectures: TTh 4:30-5:50pm, Room 2404 (Lift 17-18)
