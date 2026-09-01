@@ -28,7 +28,7 @@ TAs: [Junteng Liu](), [Yue Ma](), [Changxuan Fan]().
 
 <b> Office Hours </b>
 
-TBD
+Request per email
 
 ### Contact and Communication
 [Canvas](https://canvas.ust.hk/courses/67721) is the main platform for communication about technical questions of lecture contents and homeworks. Please do not directly email the teaching staff on technical questions which may easily get lost. The teaching staff will try to answer questions on Canvas in a prompt manner. Some rules:
@@ -55,7 +55,7 @@ The lecture schedule below is tentative and subject to change; there may also be
 
 | Slides | Date | Topic | Readings | Assignments |
 |:---|:---|:---|:---|:---|
-| Lecture 0 | 02/09 Wed | Introduction to Large Language Models | | |
+| [Lecture 0](https://drive.google.com/file/d/1CPtIFWHcvAAn64orLNq-QkFrgmWUPAjF/view?usp=sharing) | 02/09 Wed | Introduction to Large Language Models | | |
 | Lecture 1 | 04/09 Fri | Machine Learning Basics | | |
 | Lecture 2 | 09/09 Wed | Language Model | | |
 | Lecture 3 | 11/09 Fri | Neural Networks and Transformers | Annotated Transformer, Illustrated Transformer | |
