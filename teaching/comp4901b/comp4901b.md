@@ -56,7 +56,7 @@ The lecture schedule below is tentative and subject to change; there may also be
 | Slides | Date | Topic | Readings | Assignments |
 |:---|:---|:---|:---|:---|
 | [Lecture 0](https://drive.google.com/file/d/1CPtIFWHcvAAn64orLNq-QkFrgmWUPAjF/view?usp=sharing) | 02/09 Wed | Introduction to Large Language Models | | |
-| Lecture 1 | 04/09 Fri | Machine Learning Basics | | |
+| [Lecture 1](https://drive.google.com/file/d/1lDN4OZf4AlJMP-V4BHnCKIgMIZ8yz_Yt/view?usp=sharing) | 04/09 Fri | Machine Learning Basics | | |
 | Lecture 2 | 09/09 Wed | Language Model | | |
 | Lecture 3 | 11/09 Fri | Neural Networks and Transformers | Annotated Transformer, Illustrated Transformer | |
 | Lecture 4 | 16/09 Wed | Transformers | Annotated Transformer, Illustrated Transformer | |
