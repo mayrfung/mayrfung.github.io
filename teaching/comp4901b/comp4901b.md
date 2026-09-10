@@ -58,7 +58,7 @@ The lecture schedule below is tentative and subject to change; there may also be
 | [Lecture 0](https://drive.google.com/file/d/1CPtIFWHcvAAn64orLNq-QkFrgmWUPAjF/view?usp=sharing) | 02/09 Wed | Introduction to Large Language Models | | |
 | [Lecture 1](https://drive.google.com/file/d/1lDN4OZf4AlJMP-V4BHnCKIgMIZ8yz_Yt/view?usp=sharing) | 04/09 Fri | Machine Learning Basics | | |
 | [Lecture 2](https://drive.google.com/file/d/1rcK1zuEpE4NYkS5XEsKdRj8BVfPTORv0/view?usp=sharing) | 09/09 Wed | Language Model | GPT 6 | |
-| Lecture 3 | 11/09 Fri | Neural Networks and Transformers | Annotated Transformer, Illustrated Transformer | |
+| [Lecture 3](https://drive.google.com/drive/folders/1uQk-j8Z953PiQMjw3kvVuId8KQQi_vro?usp=sharing) | 11/09 Fri | Neural Networks and Transformers | Annotated Transformer, Illustrated Transformer | |
 | Lecture 4 | 16/09 Wed | Transformers | Annotated Transformer, Illustrated Transformer | |
 | Lecture 5 | 18/09 Fri | Pretraining: Objectives and Data Curation | | |
 | | 22/09 Tue | | | HW1 Out |
