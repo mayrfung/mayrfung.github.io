@@ -55,30 +55,28 @@ The lecture schedule below is tentative and subject to change; there may also be
 
 | Slides | Date | Topic | Readings | Assignments |
 |:---|:---|:---|:---|:---|
-| [Lecture 0](https://drive.google.com/file/d/1CPtIFWHcvAAn64orLNq-QkFrgmWUPAjF/view?usp=sharing) | 02/09 Wed | Introduction to Large Language Models | | |
-| [Lecture 1](https://drive.google.com/file/d/1lDN4OZf4AlJMP-V4BHnCKIgMIZ8yz_Yt/view?usp=sharing) | 04/09 Fri | Machine Learning Basics | | |
-| [Lecture 2](https://drive.google.com/file/d/1rcK1zuEpE4NYkS5XEsKdRj8BVfPTORv0/view?usp=sharing) | 09/09 Wed | Language Model | GPT 6 | |
-| [Lecture 3](https://drive.google.com/drive/folders/1uQk-j8Z953PiQMjw3kvVuId8KQQi_vro?usp=sharing) | 11/09 Fri | Neural Networks and Transformers | Annotated Transformer, Illustrated Transformer | |
-| Lecture 4 | 16/09 Wed | Transformers | Annotated Transformer, Illustrated Transformer | |
-| Lecture 5 | 18/09 Fri | Pretraining: Objectives and Data Curation | | |
+| [Lecture 0](https://drive.google.com/file/d/1CPtIFWHcvAAn64orLNq-QkFrgmWUPAjF/view?usp=sharing) | 01/09 Tue | Introduction to Large Language Models | | |
+| [Lecture 1](https://drive.google.com/file/d/1lDN4OZf4AlJMP-V4BHnCKIgMIZ8yz_Yt/view?usp=sharing) | 03/09 Thu | Machine Learning Basics | | |
+| [Lecture 2](https://drive.google.com/file/d/1rcK1zuEpE4NYkS5XEsKdRj8BVfPTORv0/view?usp=sharing) | 08/09 Tue | Language Model | GPT 6 | |
+| [Lecture 3](https://drive.google.com/drive/folders/1uQk-j8Z953PiQMjw3kvVuId8KQQi_vro?usp=sharing) | 10/09 Thu | Neural Networks and Transformers | Annotated Transformer, Illustrated Transformer | |
+| Lecture 4 | 15/09 Tue | Transformers | Annotated Transformer, Illustrated Transformer | |
+| Lecture 5 | 17/09 Thu | Pretraining: Objectives and Data Curation | | |
 | | 22/09 Tue | | | HW1 Out |
-| Lecture 6 | 23/09 Wed | Adapting Large Language Models | | |
-| Lecture 7 | 25/09 Fri | Evaluation of Large Language Models | | |
-| Lecture 8 | 30/09 Wed | Instruction Tuning and Alignment | | |
+| Lecture 6 | 22/09 Tue | Adapting Large Language Models | | |
+| Lecture 7 | 24/09 Thu | Evaluation of Large Language Models | | |
+| Lecture 8 | 29/09 Tue | Instruction Tuning and Alignment | | |
 | **Holiday** | 01/10 Thu | **National Day** | | |
-| Lecture 9 | 02/10 Fri | Instruction Tuning and Alignment | | **HW1 Due** |
-| Lecture 10 | 07/10 Wed | Reinforcement Learning Basics | | |
-| Lecture 11 | 09/10 Fri | Reinforcement Learning from Human Feedback (RLHF) | | |
-| Lecture 12 | 14/10 Wed | Scaling Up LLMs: Scaling Laws | | **HW2 Out** |
-| Lecture 13 | 16/10 Fri | Chain-of-Thought Reasoning | | |
-| **Holiday** | 19/10 Mon | **The day following Chung Yeung Festival** | | |
-| Lecture 14 | 21/10 Wed | Deep Reasoning Models | | |
-| Lecture 15 | 23/10 Fri | Synthetic Data Training: Data Synthesis and Distillation | | |
-| Lecture 16 | 28/10 Wed | LLM Agents | | **HW2 Due** |
-| Lecture 17 | 30/10 Fri | LLM Agents | | **HW3 Out** |
-| Lecture 18 | 04/11 Wed | LLM Bias and Safety | | |
-| Lecture 19 | 06/11 Fri | LLM Safety, Attack, and Defense | | |
-| | 10/11 Tue | | | **HW3 Due** |
-| Lecture 20 | 11/11 Wed | Hallucination and RAG | | |
-| Lecture 21 | 13/11 Fri | RAG and MoE LLMs | | |
-| Lecture 22 | 18/11 Wed | MoE LLMs, Vibe Coding, and Review | | |
+| Lecture 9 | 06/10 Tue | Instruction Tuning and Alignment | | **HW1 Due** |
+| Lecture 10 | 08/10 Thu | Reinforcement Learning Basics | | |
+| Lecture 11 | 13/10 Tue | Reinforcement Learning from Human Feedback (RLHF) | | **HW2 Out** |
+| Lecture 12 | 15/10 Thu | Scaling Up LLMs: Scaling Laws | | |
+| Lecture 13 | 20/10 Tue | Chain-of-Thought Reasoning | | |
+| Lecture 14 | 22/10 Thu | Deep Reasoning Models | | |
+| Lecture 15 | 27/10 Tue | Synthetic Data Training: Data Synthesis and Distillation | | **HW2 Due** |
+| Lecture 16 | 29/10 Thu | LLM Agents | | **HW3 Out** |
+| Lecture 17 | 03/11 Tue | LLM Agents | | |
+| Lecture 18 | 05/11 Thu | LLM Bias and Safety | | |
+| Lecture 19 | 10/11 Tue | LLM Safety, Attack, and Defense | | **HW3 Due** |
+| Lecture 20 | 12/11 Thu | Hallucination and RAG | | |
+| Lecture 21 | 17/11 Tue | RAG and MoE LLMs | | |
+| Lecture 22 | 19/11 Thu | MoE LLMs, Vibe Coding, and Review | | |
