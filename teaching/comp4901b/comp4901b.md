@@ -60,7 +60,7 @@ The lecture schedule below is tentative and subject to change; there may also be
 | [Lecture 2](https://drive.google.com/file/d/1rcK1zuEpE4NYkS5XEsKdRj8BVfPTORv0/view?usp=sharing) | 08/09 Tue | Language Model | [GPT 6](https://openai.com/index/gpt-6-astra-next-generation-work/) | |
 | [Lecture 3](https://drive.google.com/drive/folders/1uQk-j8Z953PiQMjw3kvVuId8KQQi_vro?usp=sharing) | 10/09 Thu | Neural Networks and Transformers | [Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) | |
 | [Lecture 4](https://drive.google.com/file/d/1CPtIFWHcvAAn64orLNq-QkFrgmWUPAjF/view?usp=sharing) | 15/09 Tue | Transformers | [Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) | |
-| Lecture 5 | 17/09 Thu | Pretraining: Objectives and Data Curation | | |
+| [Lecture 5](https://drive.google.com/file/d/1JHSZegfrSzB5v6UrdeNLPqxXhLW1Vl08/view?usp=sharing) | 17/09 Thu | Pretraining: Objectives and Data Curation | | |
 | | 22/09 Tue | | | HW1 Out |
 | Lecture 6 | 22/09 Tue | Adapting Large Language Models | | |
 | Lecture 7 | 24/09 Thu | Evaluation of Large Language Models | | |
