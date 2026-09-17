@@ -61,20 +61,19 @@ The lecture schedule below is tentative and subject to change; there may also be
 | [Lecture 3](https://drive.google.com/drive/folders/1uQk-j8Z953PiQMjw3kvVuId8KQQi_vro?usp=sharing) | 10/09 Thu | Neural Networks and Transformers | [Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) | |
 | [Lecture 4](https://drive.google.com/file/d/1CPtIFWHcvAAn64orLNq-QkFrgmWUPAjF/view?usp=sharing) | 15/09 Tue | Transformers | [Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) | |
 | [Lecture 5](https://drive.google.com/file/d/1JHSZegfrSzB5v6UrdeNLPqxXhLW1Vl08/view?usp=sharing) | 17/09 Thu | Language Model Adaptation and Evaluation | | |
-| | 22/09 Tue | | | HW1 Out |
-| Lecture 6 | 22/09 Tue | Adapting Large Language Models | | |
-| Lecture 7 | 24/09 Thu | Evaluation of Large Language Models | | |
-| Lecture 8 | 29/09 Tue | Instruction Tuning and Alignment | | |
+| Lecture 6 | 22/09 Tue | Adapting Large Language Models | | HW1 Out |
+| Lecture 7 | 24/09 Thu | Instruction Tuning and Alignment Basics | | |
+| Lecture 8 | 29/09 Tue | Advanced Alignment and Preference Optimization | | |
 | **Holiday** | 01/10 Thu | **National Day** | | |
-| Lecture 9 | 06/10 Tue | Instruction Tuning and Alignment | | **HW1 Due** |
-| Lecture 10 | 08/10 Thu | Reinforcement Learning Basics | | |
-| Lecture 11 | 13/10 Tue | Reinforcement Learning from Human Feedback (RLHF) | | **HW2 Out** |
-| Lecture 12 | 15/10 Thu | Scaling Up LLMs: Scaling Laws | | |
-| Lecture 13 | 20/10 Tue | Chain-of-Thought Reasoning | | |
-| Lecture 14 | 22/10 Thu | Deep Reasoning Models | | |
-| Lecture 15 | 27/10 Tue | Synthetic Data Training: Data Synthesis and Distillation | | **HW2 Due** |
-| Lecture 16 | 29/10 Thu | LLM Agents | | **HW3 Out** |
-| Lecture 17 | 03/11 Tue | LLM Agents | | |
+| Lecture 9 | 06/10 Tue | Reinforcement Learning Basics | | **HW1 Due** |
+| Lecture 10 | 08/10 Thu | Reinforcement Learning from Human Feedback (RLHF) | | |
+| Lecture 11 | 13/10 Tue | Scaling Up LLMs: Scaling Laws | | **HW2 Out** |
+| Lecture 12 | 15/10 Thu | Chain-of-Thought Reasoning | | |
+| Lecture 13 | 20/10 Tue | Deep Reasoning Models and Recursive Self-Improvement (RSI) | | |
+| Lecture 14 | 22/10 Thu | Synthetic Data, On-Policy Distillation, and Data Synthesis | | |
+| Lecture 15 | 27/10 Tue | LLM Agents and Tool Use | | **HW2 Due** |
+| Lecture 16 | 29/10 Thu | World Models and Environment Simulation | | **HW3 Out** |
+| Lecture 17 | 03/11 Tue | Embodied AI, Vision-Language-Action (VLA), and World Action Models | | |
 | Lecture 18 | 05/11 Thu | LLM Bias and Safety | | |
 | Lecture 19 | 10/11 Tue | LLM Safety, Attack, and Defense | | **HW3 Due** |
 | Lecture 20 | 12/11 Thu | Hallucination and RAG | | |
