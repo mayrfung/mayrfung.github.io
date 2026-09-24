@@ -62,7 +62,7 @@ The lecture schedule below is tentative and subject to change; there may also be
 | [Lecture 4](https://drive.google.com/file/d/1CPtIFWHcvAAn64orLNq-QkFrgmWUPAjF/view?usp=sharing) | 15/09 Tue | Transformers | [Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) | |
 | [Lecture 5](https://drive.google.com/file/d/1JHSZegfrSzB5v6UrdeNLPqxXhLW1Vl08/view?usp=sharing) | 17/09 Thu | Language Model Adaptation and Evaluation | | |
 | [Lecture 6](https://drive.google.com/file/d/1a6a8r44p1uBAuBB9ZJXwRzsBAxBKxFqf/view?usp=sharing) | 22/09 Tue | Instruction Tuning and Alignment | | [HW1 Out](https://github.com/hkust-nlp/COMP4901B-LLMs/tree/main/assignment1) |
-| Lecture 7 | 24/09 Thu | TBD | | |
+| [Lecture 7](https://drive.google.com/file/d/1qZ_nR9ccrZw2slXx4WnMe5wHW3OBZOW0/view?usp=sharing) | 24/09 Thu | TBD | | |
 | Lecture 8 | 29/09 Tue | Advanced Alignment and Preference Optimization | | |
 | **Holiday** | 01/10 Thu | **National Day** | | |
 | Lecture 9 | 06/10 Tue | Reinforcement Learning Basics | | **HW1 Due** |
