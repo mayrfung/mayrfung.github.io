@@ -69,9 +69,9 @@ The lecture schedule below is tentative and subject to change; there may also be
 | Lecture 10 | 08/10 Thu | Chain-of-Thought Reasoning | | **Project Proposal Due** (9th) |
 | Lecture 11 | 13/10 Tue | Deep Reasoning Models and Recursive Self-Improvement (RSI) | | **HW2 Out** |
 | Lecture 12 | 15/10 Thu | TBD | | |
-| Lecture 13 | 20/10 Tue | Midterm Exam (tentative) | | |
-| Lecture 14 | 22/10 Thu | Synthetic Data, On-Policy Distillation, and Data Synthesis | | |
-| Lecture 15 | 27/10 Tue | LLM Agents and Tool Use | | **HW2 Due** |
+| Lecture 13 | 20/10 Tue | Synthetic Data, On-Policy Distillation, and Data Synthesis | | |
+| Lecture 14 | 22/10 Thu | LLM Agents and Tool Use | | |
+| Lecture 15 | 27/10 Tue | Midterm Exam (tentative) | | **HW2 Due** |
 | Lecture 16 | 29/10 Thu | World Models and Environment Simulation | | **HW3 Out** |
 | Lecture 17 | 03/11 Tue | Embodied AI, Vision-Language-Action (VLA), and World Action Models | | |
 | Lecture 18 | 05/11 Thu | LLM Bias and Safety | | |
