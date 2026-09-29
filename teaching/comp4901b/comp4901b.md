@@ -66,7 +66,7 @@ The lecture schedule below is tentative and subject to change; there may also be
 | [Lecture 8](https://drive.google.com/file/d/1YU72ey_7GvtrQC7DexWo8mrtWii1rRFE/view?usp=sharing) | 29/09 Tue | Advanced Alignment and Preference Optimization | | |
 | **Holiday** | 01/10 Thu | **National Day** | | |
 | Lecture 9 | 06/10 Tue | Scaling Up LLMs: Scaling Laws | | **HW1 Due** |
-| Lecture 10 | 08/10 Thu | Chain-of-Thought Reasoning | | |
+| Lecture 10 | 08/10 Thu | Chain-of-Thought Reasoning | | **Project Proposal Due** (9th) |
 | Lecture 11 | 13/10 Tue | Deep Reasoning Models and Recursive Self-Improvement (RSI) | | **HW2 Out** |
 | Lecture 12 | 15/10 Thu | TBD | | |
 | Lecture 13 | 20/10 Tue | Midterm Exam (tentative) | | |
