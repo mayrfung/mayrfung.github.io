@@ -65,11 +65,11 @@ The lecture schedule below is tentative and subject to change; there may also be
 | [Lecture 7](https://drive.google.com/file/d/1qZ_nR9ccrZw2slXx4WnMe5wHW3OBZOW0/view?usp=sharing) | 24/09 Thu | RL for LMs | | |
 | [Lecture 8](https://drive.google.com/file/d/1YU72ey_7GvtrQC7DexWo8mrtWii1rRFE/view?usp=sharing) | 29/09 Tue | Advanced Alignment and Preference Optimization | | |
 | **Holiday** | 01/10 Thu | **National Day** | | |
-| Lecture 9 | 06/10 Tue | Reinforcement Learning Basics | | **HW1 Due** |
-| Lecture 10 | 08/10 Thu | Reinforcement Learning from Human Feedback (RLHF) | | |
-| Lecture 11 | 13/10 Tue | Scaling Up LLMs: Scaling Laws | | **HW2 Out** |
-| Lecture 12 | 15/10 Thu | Chain-of-Thought Reasoning | | |
-| Lecture 13 | 20/10 Tue | Deep Reasoning Models and Recursive Self-Improvement (RSI) | | |
+| Lecture 9 | 06/10 Tue | Scaling Up LLMs: Scaling Laws | | **HW1 Due** |
+| Lecture 10 | 08/10 Thu | Chain-of-Thought Reasoning | | |
+| Lecture 11 | 13/10 Tue | Deep Reasoning Models and Recursive Self-Improvement (RSI) | | **HW2 Out** |
+| Lecture 12 | 15/10 Thu | TBD | | |
+| Lecture 13 | 20/10 Tue | Midterm Exam (tentative) | | |
 | Lecture 14 | 22/10 Thu | Synthetic Data, On-Policy Distillation, and Data Synthesis | | |
 | Lecture 15 | 27/10 Tue | LLM Agents and Tool Use | | **HW2 Due** |
 | Lecture 16 | 29/10 Thu | World Models and Environment Simulation | | **HW3 Out** |
