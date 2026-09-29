@@ -63,7 +63,7 @@ The lecture schedule below is tentative and subject to change; there may also be
 | [Lecture 5](https://drive.google.com/file/d/1JHSZegfrSzB5v6UrdeNLPqxXhLW1Vl08/view?usp=sharing) | 17/09 Thu | Language Model Adaptation and Evaluation | | |
 | [Lecture 6](https://drive.google.com/file/d/1NoFINULUIRePIDy-hZWqSv5P3P4iCCRy/view?usp=sharing) | 22/09 Tue | Instruction Tuning and Alignment | | [HW1 Out](https://github.com/hkust-nlp/COMP4901B-LLMs/tree/main/assignment1) |
 | [Lecture 7](https://drive.google.com/file/d/1qZ_nR9ccrZw2slXx4WnMe5wHW3OBZOW0/view?usp=sharing) | 24/09 Thu | RL for LMs | | |
-| Lecture 8 | 29/09 Tue | Advanced Alignment and Preference Optimization | | |
+| [Lecture 8](https://drive.google.com/file/d/1YU72ey_7GvtrQC7DexWo8mrtWii1rRFE/view?usp=sharing) | 29/09 Tue | Advanced Alignment and Preference Optimization | | |
 | **Holiday** | 01/10 Thu | **National Day** | | |
 | Lecture 9 | 06/10 Tue | Reinforcement Learning Basics | | **HW1 Due** |
 | Lecture 10 | 08/10 Thu | Reinforcement Learning from Human Feedback (RLHF) | | |
