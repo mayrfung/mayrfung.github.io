@@ -65,7 +65,7 @@ The lecture schedule below is tentative and subject to change; there may also be
 | [Lecture 7](https://drive.google.com/file/d/1qZ_nR9ccrZw2slXx4WnMe5wHW3OBZOW0/view?usp=sharing) | 24/09 Thu | RL for LMs | | |
 | [Lecture 8](https://drive.google.com/file/d/1YU72ey_7GvtrQC7DexWo8mrtWii1rRFE/view?usp=sharing) | 29/09 Tue | Advanced Alignment and Preference Optimization | [Verl](https://github.com/verl-project/verl) | |
 | **Holiday** | 01/10 Thu | **National Day** | | |
-| Lecture 9 | 06/10 Tue | Scaling Up LLMs: Scaling Laws | | **HW1 Due** |
+| [Lecture 9](https://drive.google.com/file/d/171PLAds1np0tBHcqwV2UVUDyxcu8z-zT/view?usp=sharing) | 06/10 Tue | LLM Decoding | | **HW1 Due** |
 | Lecture 10 | 08/10 Thu | Chain-of-Thought Reasoning | | **Project Proposal Due** (9th) |
 | Lecture 11 | 13/10 Tue | Deep Reasoning Models and Recursive Self-Improvement (RSI) | | **HW2 Out** |
 | Lecture 12 | 15/10 Thu | TBD | | |
