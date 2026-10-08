@@ -66,7 +66,7 @@ The lecture schedule below is tentative and subject to change; there may also be
 | [Lecture 8](https://drive.google.com/file/d/1YU72ey_7GvtrQC7DexWo8mrtWii1rRFE/view?usp=sharing) | 29/09 Tue | Advanced Alignment and Preference Optimization | [Verl](https://github.com/verl-project/verl) | |
 | **Holiday** | 01/10 Thu | **National Day** | | |
 | [Lecture 9](https://drive.google.com/file/d/171PLAds1np0tBHcqwV2UVUDyxcu8z-zT/view?usp=sharing) | 06/10 Tue | LLM Decoding | | **HW1 Due** |
-| Lecture 10 | 08/10 Thu | Chain-of-Thought Reasoning | | **Project Proposal Due** (9th) |
+| [Lecture 10](https://drive.google.com/file/d/10F5S_WymY2hoD95FDBfACAJUUcX7ZfNx/view?usp=sharing) | 08/10 Thu | Scaling Laws | | **Project Proposal Due** (9th) |
 | Lecture 11 | 13/10 Tue | Deep Reasoning Models and Recursive Self-Improvement (RSI) | | **HW2 Out** |
 | Lecture 12 | 15/10 Thu | TBD | | |
 | Lecture 13 | 20/10 Tue | Synthetic Data, On-Policy Distillation, and Data Synthesis | | |
