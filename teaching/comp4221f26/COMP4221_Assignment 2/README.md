@@ -162,4 +162,4 @@ The same documented contracts apply to public and additional grading tests. You 
 
 Can you rerun the scripts from the extracted folder? Do all five TODOs have your implementation? Do the run configuration and loss log show 100 completed updates? Are both evaluations complete with the same 20 prompt IDs? Do your report’s counts match the JSON? Does the ZIP contain the small experiment logs, with no model weights?
 
-Work individually and follow published COMP4221 integrity, AI-use, and late-submission policies. Briefly disclose any permitted AI assistance and verify all code and reported results. Ask assignment questions through the course Canvas channel.
+Work individually and follow published course policy. Briefly disclose any permitted AI assistance and verify all code and reported results. Finally, ask assignment questions through the course Canvas channel.
