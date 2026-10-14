@@ -2,11 +2,11 @@
 
 Preparing and evaluating a structured campus FAQ assistant
 
-Instructor: Yi R. (May) Fung | Fall 2026 | Total: 100 marks | Due date: To be announced
+Instructor: Yi R. (May) Fung | Fall 2026 | Total: 100 marks | Due date: Nov 7th
 
 Build a small assistant that answers questions from supplied facts and returns the answer with its source ID, such as F001. You will clean structured records, implement nucleus probability filtering, select training targets, compute a smoothed loss, and run one short fine-tuning experiment.
 
-The campus facts are fictional teaching examples, not HKUST policy. All data and runners are in this package. You do not need files or completed work from COMP4901B.
+The campus facts are fictional teaching examples, not HKUST policy. All data and runners are in this package. 
 
 ## What you will complete
 
@@ -17,9 +17,7 @@ The campus facts are fictional teaching examples, not HKUST policy. All data and
 | C | Final-response masking and balanced smoothed loss | 30 |
 | D | One fine-tuning run and matched evaluation | 35 |
 
-Implement only the five TODO functions in student_tasks.py. The data builder, encoder, training loop, evaluator, plotting helper, and submission collector are provided. Part B is a separate probability exercise; Part D deliberately uses greedy decoding and does not call your nucleus function.
-
-Budget approximately 8–12 hours of active work, plus installation and unattended compute. This is an estimate, not a measured guarantee. Only one 100-update experiment is required. An optional two-update smoke test is for debugging. No pretraining, model architecture implementation, extra dataset, sweep, or score threshold is required.
+Implement only the five TODO functions in student_tasks.py. The data builder, encoder, training loop, evaluator, plotting helper, and submission collector are provided. Part B is a separate probability exercise; Part D uses greedy decoding.
 
 ## Start here
 
