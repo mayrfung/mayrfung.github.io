@@ -27,7 +27,7 @@ You will:
 
 - **Your code:** Implement the **five TODO functions** in `student_tasks.py`.
 - **Provided code:** The data builder, encoder, training loop, evaluator, plotting helper, and submission collector are ready to use.
-- 
+  
 ## Start here
 
 ### Set up and run your first check
