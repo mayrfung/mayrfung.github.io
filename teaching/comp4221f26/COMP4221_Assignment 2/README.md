@@ -379,9 +379,8 @@ python package_submission.py
 
 **What you must do:**
 
-- Keep your checkpoint locally until grading is complete. **Do not upload it.**
+- Keep your checkpoint locally until grading is complete.
 - Upload `report.pdf` separately.
-- Inspect the ZIP before uploading.
 - Include any additional code dependencies you introduced.
 
 **Required ZIP contents:**
