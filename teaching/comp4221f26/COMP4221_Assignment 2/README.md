@@ -139,7 +139,6 @@ The input is a string. Apply these steps **in order**:
 - Reject a nonfinite `top_p` or a value outside `(0,1]` using `ValueError` or `TypeError`.
 - Any consistent ordering of ties is acceptable.
 - Preserve device and shape. Any floating output dtype is allowed.
-- No gradient or sampling implementation is required.
 
 ### B2: Work through an example (5 marks)
 
@@ -352,8 +351,6 @@ python report_assets.py
 - Why lower training loss need not improve the two discrete rates.
 - One evaluation limitation.
 - One proposed follow-up. You do not need to run it.
-
-**No minimum score or improvement is required.** Poor model performance alone does not lose marks.
 
 ## Submission and completion checklist
 
