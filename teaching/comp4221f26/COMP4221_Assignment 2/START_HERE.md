@@ -3,7 +3,7 @@
 Read the assignment handout for what is assessed. This guide explains how to run the supplied files. Run every command from your copy of `COMP4221_Assignment` folder, where `student_tasks.py` and `raw_faq.jsonl` are located. 
 ## 1 Set up once
 
-Use Python 3.10–3.12 in an isolated environment. Python 3.11 is a suitable default. On Linux or macOS, open a terminal in the extracted folder and run:
+Use Python 3.10–3.12 in an isolated environment. Python 3.11 is a suitable default. On Linux or macOS, open a terminal in the assignment folder and run:
 
 ```bash
 python3 -m venv .venv
