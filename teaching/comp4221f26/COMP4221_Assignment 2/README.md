@@ -193,4 +193,4 @@ The same documented contracts apply to public and additional grading tests. You 
 - Do your report’s counts match the JSON?
 - Does the ZIP contain the small experiment logs, with no model weights?
 
-Work individually and follow published course policy. Briefly disclose any permitted AI assistance and verify all code and reported results. Ask assignment questions through the course Canvas channel.
+Work individually and follow published course policy. Briefly disclose any permitted AI assistance and verify all code and reported results. Finally, ask assignment questions that you may have through the course Canvas channel. :)
