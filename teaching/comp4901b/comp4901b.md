@@ -68,9 +68,9 @@ The lecture schedule below is tentative and subject to change; there may also be
 | [Lecture 9](https://drive.google.com/file/d/171PLAds1np0tBHcqwV2UVUDyxcu8z-zT/view?usp=sharing) | 06/10 Tue | LLM Decoding | | **HW1 Due** |
 | [Lecture 10](https://drive.google.com/file/d/10F5S_WymY2hoD95FDBfACAJUUcX7ZfNx/view?usp=sharing) | 08/10 Thu | Scaling Laws | | **Project Proposal Due** (9th) |
 | [Lecture 11](https://drive.google.com/file/d/1oTQO26f85ne-0Ti64vxJjrgKdpL9SIZt/view?usp=sharing) | 13/10 Tue | Deep Reasoning Models and Synthetic Data | | [**HW2 Out**](https://github.com/mayrfung/COMP4901B-LLMs/blob/main/assignment2/) |
-| Lecture 12 | 15/10 Thu | TBD | | |
+| [Lecture 12](https://drive.google.com/file/d/1AJXkZXwIE7WmsMDwRn4FQ-XbLsAz4z7w/view?usp=sharing) | 15/10 Thu | LLM Agents and Tool Use | | |
 | Lecture 13 | 20/10 Tue | Synthetic Data, On-Policy Distillation, and Data Synthesis | | |
-| Lecture 14 | 22/10 Thu | LLM Agents and Tool Use | | |
+| Lecture 14 | 22/10 Thu | TBD | | |
 | Lecture 15 | 27/10 Tue | Midterm Exam (tentative) | | **HW2 Due** |
 | Lecture 16 | 29/10 Thu | World Models and Environment Simulation | | **HW3 Out** |
 | Lecture 17 | 03/11 Tue | Embodied AI, Vision-Language-Action (VLA), and World Action Models | | |
