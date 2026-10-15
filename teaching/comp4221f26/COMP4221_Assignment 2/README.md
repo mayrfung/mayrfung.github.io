@@ -1,10 +1,20 @@
 # COMP4221 Programming Assignment
 
-Instructor: Yi R. (May) Fung | Fall 2026 | Total: 100 marks | **Due date: Nov 7th**
+- **Instructor:** Yi R. (May) Fung
+- **Term:** Fall 2026
+- **Total:** 100 marks
+- **Due date:** Nov 7th
 
-Build a small assistant that answers questions from supplied facts and returns each answer with its source ID, such as `F001`. You will clean structured records, implement nucleus probability filtering, select training targets, compute a smoothed loss, and run one short fine-tuning experiment.
+Build a small assistant that answers questions from supplied facts and returns each answer with its source ID, such as `F001`.
 
-Kindly note that the campus facts are fictional teaching examples, not HKUST policy. All data and runners are in this package.
+You will:
+
+- Clean structured FAQ records.
+- Implement nucleus probability filtering.
+- Select training targets and compute a smoothed loss.
+- Run one short fine-tuning experiment and compare the results.
+
+**Note:** The campus facts are fictional teaching examples, not HKUST policy. All data and runners are included in this package.
 
 ## What you will complete
 
@@ -15,11 +25,19 @@ Kindly note that the campus facts are fictional teaching examples, not HKUST pol
 | C | Final-response masking and balanced smoothed loss | 30 |
 | D | One fine-tuning run and matched evaluation | 35 |
 
-Implement only the **five TODO functions** in `student_tasks.py`. The data builder, encoder, training loop, evaluator, plotting helper, and submission collector are provided. Part B is a separate probability exercise. Part D uses greedy decoding.
+- **Your code:** Implement only the **five TODO functions** in `student_tasks.py`.
+- **Provided code:** The data builder, encoder, training loop, evaluator, plotting helper, and submission collector are ready to use.
+- **Part B vs. Part D:** Part B is a separate probability exercise. Part D uses greedy decoding and does not use Part B.
 
 ## Start here
 
-Read `START_HERE.md` for installation, the full command sequence, recovery, and troubleshooting. Use Python 3.10–3.12. A CUDA GPU is recommended for the experiment, but CPU is supported. Local function checks need no model download. Run commands from the extracted folder that contains `student_tasks.py` and `raw_faq.jsonl`.
+### Set up and run your first check
+
+- **Read first:** `START_HERE.md` covers installation, the full command sequence, recovery, and troubleshooting.
+- **Python:** Use version 3.10–3.12.
+- **Hardware:** A CUDA GPU is recommended for the experiment. CPU is also supported.
+- **Model download:** Local function checks do not require one.
+- **Working folder:** Run commands from the extracted folder containing `student_tasks.py` and `raw_faq.jsonl`.
 
 ```bash
 python -m pip install -r requirements.txt
@@ -29,85 +47,257 @@ python checks.py --part A
 python prepare_data.py
 ```
 
-You can check B, C1, and C2 separately while other TODOs remain unfinished. Run `python checks.py` after completing all five functions. An untouched starter is expected to report TODOs. This does not indicate an installation failure.
+### Check your progress
 
-Keep the supplied data, prompt builder, encoder, scoring rules, and experiment settings fixed. Implement your own solution for this assignment. Any reuse or AI assistance must follow the published COMP4221 course policy.
+- You can check **B, C1, and C2 separately** while other TODOs remain unfinished.
+- After completing all five functions, run `python checks.py`.
+- An untouched starter is expected to report TODOs. This does **not** indicate an installation failure.
+
+### Keep the experiment consistent
+
+- Keep the supplied data, prompt builder, encoder, scoring rules, and experiment settings fixed.
+- Implement your own solution for this assignment.
+- Any reuse or AI assistance must follow the published COMP4221 course policy.
 
 ## Part A: Normalize and validate FAQ records
 
-15 marks | `raw_faq.jsonl` contains 120 records. Each accepted record must have string fields `id`, `question`, and `answer`. All paths below are relative to the extracted assignment folder.
+**15 marks**
+
+- **Input file:** `raw_faq.jsonl` contains 120 records.
+- **Required fields:** Each accepted record must have string fields `id`, `question`, and `answer`.
+- **Paths:** All paths below are relative to the extracted assignment folder.
 
 ### A1: Implement two functions (10 marks)
 
-`normalize_text(text)` receives a string. In this order, decode HTML entities with `html.unescape`, apply Unicode NFKC normalization, then collapse every whitespace run to one ASCII space and trim the ends. Do not lowercase or remove punctuation. NFKC may itself change compatibility characters, including full-width punctuation. These changes are required.
+**Function 1: `normalize_text(text)`**
 
-`deduplicate_records(records)` rejects non-dictionary entries and entries with missing or non-string required fields. Normalize all three fields, then reject IDs that do not exactly match uppercase `F` followed by three ASCII digits, or empty normalized questions or answers. Ignore extra fields. Return dictionaries containing only `id`, `question`, and `answer`.
+The input is a string. Apply these steps **in order**:
 
-For each valid key `(normalized id, normalized question.casefold())`, keep the first normalized record and preserve input order. Use `casefold` only for the comparison key. Keep the normalized question’s original case in the output. Different IDs are different keys even if their questions match.
+1. Decode HTML entities with `html.unescape`.
+2. Apply Unicode NFKC normalization.
+3. Collapse every whitespace run to one ASCII space and trim the ends.
+
+**Important details:**
+
+- Do not lowercase the text or remove punctuation.
+- NFKC may change compatibility characters, including full-width punctuation. These changes are required.
+
+**Function 2: `deduplicate_records(records)`**
+
+1. Reject non-dictionary entries and entries with missing or non-string required fields.
+2. Normalize all three required fields.
+3. Reject a record if its normalized ID does not exactly match uppercase `F` followed by three ASCII digits, or if its normalized question or answer is empty.
+4. Deduplicate using the key `(normalized id, normalized question.casefold())`.
+5. Keep the **first normalized record** for each valid key and preserve input order.
+6. Return dictionaries containing only `id`, `question`, and `answer`. Ignore extra fields.
+
+**Important details:**
+
+- Use `casefold` only for the comparison key. Preserve the normalized question’s original case in the output.
+- Different IDs are different keys, even when their questions match.
 
 ### A2: Report and interpret (5 marks)
 
-Run `prepare_data.py`. A correct implementation produces 100 retained facts, 300 training conversations, and 20 evaluation prompts. Report the raw count, valid count before deduplication, and unique count from `data/counts.json`. Show two actual before/after normalization examples with record IDs. Explain one risk when duplicate questions have conflicting answers and one way to detect it. No conflict-detector implementation is required.
+**Run:** `python prepare_data.py`
+
+**Expected output from a correct implementation:**
+
+- 100 retained facts.
+- 300 training conversations.
+- 20 evaluation prompts.
+
+**Include in your report:**
+
+- The raw count, valid count before deduplication, and unique count from `data/counts.json`.
+- Two actual before/after normalization examples, with record IDs.
+- One risk when duplicate questions have conflicting answers.
+- One way to detect that conflict. **No conflict-detector implementation is required.**
 
 ## Part B: Nucleus probability filtering
 
-20 marks | `nucleus_distribution(logits, temperature, top_p)` returns a probability vector in the original vocabulary order, not a sampled token ID.
+**20 marks**
+
+**Function:** `nucleus_distribution(logits, temperature, top_p)`
+
+- **Input logits:** Finite, nonempty, one-dimensional floating-point values.
+- **Return value:** A probability vector in the original vocabulary order, **not a sampled token ID**.
 
 ### B1: Implement filtering (15 marks)
 
-Input logits are finite, nonempty, one-dimensional floating-point values. Compute a stable softmax after dividing logits by `temperature`. Sort probabilities descending. Retain the smallest prefix with cumulative probability greater than or equal to `top_p`, **including the crossing token**. Zero the rest, renormalize, and restore the original vocabulary order.
+**Steps:**
 
-At `top_p=1`, return the full softmax distribution. Keep at least one token. Reject nonfinite or nonpositive `temperature` and nonfinite `top_p` or `top_p` outside `(0,1]`, using `ValueError` or `TypeError`. Any consistent ordering of ties is acceptable. Preserve device and shape. Any floating output dtype is allowed. No gradient or sampling implementation is required.
+1. Divide logits by `temperature` and compute a stable softmax.
+2. Sort the probabilities in descending order.
+3. Retain the smallest prefix whose cumulative probability is **greater than or equal to `top_p`**, including the crossing token.
+4. Set the remaining probabilities to zero.
+5. Renormalize the retained probabilities and restore the original vocabulary order.
+
+**Edge cases and requirements:**
+
+- At `top_p=1`, return the full softmax distribution.
+- Keep at least one token.
+- Reject a nonfinite or nonpositive `temperature` using `ValueError` or `TypeError`.
+- Reject a nonfinite `top_p` or a value outside `(0,1]` using `ValueError` or `TypeError`.
+- Any consistent ordering of ties is acceptable.
+- Preserve device and shape. Any floating output dtype is allowed.
+- No gradient or sampling implementation is required.
 
 ### B2: Work through an example (5 marks)
 
-For logits `ln([0.50,0.30,0.15,0.05])` and temperature 1, give zero-based retained indices and the four-element output vector at `top_p=0.70` and `top_p=0.90`, rounded to three decimals. Explain crossing-token inclusion and why the retained count is not fixed. Include your B checker result. At an exact threshold equality, the prefix already reaches the threshold, so no extra token is required.
+Use logits `ln([0.50,0.30,0.15,0.05])` and temperature 1.
+
+**Include in your report:**
+
+- The zero-based retained indices for `top_p=0.70` and `top_p=0.90`.
+- The four-element output vector for each threshold, rounded to three decimals.
+- An explanation of crossing-token inclusion and why the retained count is not fixed.
+- Your B checker result.
+
+**Threshold equality:** If the cumulative probability exactly equals the threshold, the prefix already reaches it. No extra token is required.
 
 ## Part C: Final response supervision and smoothed loss
 
-30 marks | The provided encoder returns token IDs and ordered, valid, nonoverlapping assistant spans. A span `[start,end)` includes token positions `start` through `end−1`, including that response’s EOS token and excluding its role header. You do not need to infer spans or change a chat template.
+**30 marks**
+
+The provided encoder returns token IDs and ordered, valid, nonoverlapping assistant spans.
+
+- A span `[start,end)` covers positions `start` through `end−1`.
+- It **includes** that response’s EOS token and **excludes** its role header.
+- You do not need to infer spans or change a chat template.
 
 ### C1: Supervise the last original response (15 marks)
 
-Complete `final_response_features(input_ids, assistant_spans, max_length, pad_token_id)`. Inputs are Python lists of integer token IDs and span pairs, and `max_length` is a positive integer. Return a dictionary with `input_ids`, `labels`, and `attention_mask`, each a one-dimensional `torch.long` tensor of length `max_length`.
+**Function:** `final_response_features(input_ids, assistant_spans, max_length, pad_token_id)`
 
-Select the **last assistant span in the original conversation**. Copy input IDs into labels only at positions in this span and set every other label to `-100`. Earlier assistant turns, system and user messages, and all role headers remain input context but are not supervised targets.
+**Inputs and return value:**
 
-Right-truncate all arrays consistently, then right-pad. Real tokens have attention 1. Padding has the supplied pad ID, attention 0, and label `-100`. Distinguish padding by position, even when pad and EOS have the same ID. If there is no assistant span, or the last original response is wholly truncated, all labels are `-100`. Never fall back to an earlier response.
+- `input_ids` and `assistant_spans` are Python lists of integer token IDs and span pairs, respectively.
+- `max_length` is a positive integer.
+- Return a dictionary with `input_ids`, `labels`, and `attention_mask`.
+- Each returned value must be a one-dimensional `torch.long` tensor of length `max_length`.
 
-In your report, construct a small example containing two assistant spans. Show input IDs, spans, labels, and attention with no truncation and with truncation that removes the final response. Explain the difference between useful context and supervised targets. The trainer skips examples with no valid shifted targets.
+**Steps:**
+
+1. Select the **last assistant span in the original conversation**.
+2. Copy input IDs into labels only at positions in this span. Set every other label to `-100`.
+3. Right-truncate all arrays consistently, then right-pad to `max_length`.
+
+**Masking and padding rules:**
+
+- Earlier assistant turns, system and user messages, and all role headers remain input context but are not supervised targets.
+- Real tokens have attention 1.
+- Padding uses the supplied pad ID, attention 0, and label `-100`.
+- Identify padding by **position**, even when pad and EOS have the same ID.
+- If there is no assistant span, all labels are `-100`.
+- If the last original response is wholly truncated, all labels are `-100`. **Never fall back to an earlier response.**
+
+**Include in your report:**
+
+- A small example containing two assistant spans.
+- Input IDs, spans, labels, and attention for the example **without truncation**.
+- The same information with truncation that **removes the final response**.
+- An explanation of the difference between useful context and supervised targets.
+
+**Trainer behavior:** The trainer skips examples with no valid shifted targets.
 
 ### C2: Conversation-balanced label smoothing (15 marks)
 
-Complete `conversation_balanced_loss(logits, labels, epsilon=0.1)`. Logits have shape `[batch, length, vocabulary]`. Labels are `torch.long` with shape `[batch, length]` on the same device. Labels are valid vocabulary indices or `-100`. Inputs are finite, and batch, length, and vocabulary sizes are positive.
+**Function:** `conversation_balanced_loss(logits, labels, epsilon=0.1)`
 
-Align `logits[:, :-1, :]` with `labels[:, 1:]` for next-token prediction. Ignore targets equal to `-100`. For each valid target `y`, let `log_p` be stable log-softmax over the vocabulary. Its loss is `(1−epsilon) × (−log_p[y]) + epsilon × mean_v(−log_p[v])`. The uniform smoothing term includes the correct token.
+**Inputs:**
 
-Average valid token losses within each sequence, then average those means over nonempty sequences. Exclude sequences with no valid shifted targets. If none remain, including when `length=1`, return a differentiable scalar zero on the logits device. Preserve gradients. Reject `epsilon` outside `[0,1]` or nonfinite `epsilon`.
+- `logits` has shape `[batch, length, vocabulary]`.
+- `labels` is a `torch.long` tensor with shape `[batch, length]` on the same device as `logits`.
+- Labels are valid vocabulary indices or `-100`.
+- Inputs are finite. Batch, length, and vocabulary sizes are positive.
 
-Derive the objective with tensor operations and log-softmax. Do not call `CrossEntropyLoss` or `functional.cross_entropy` in your implementation. The public checks may use them as an independent oracle. Never gather a vocabulary element using label `-100`.
+**Steps:**
+
+1. Align `logits[:, :-1, :]` with `labels[:, 1:]` for next-token prediction.
+2. Ignore targets equal to `-100`.
+3. Compute stable log-softmax over the vocabulary to obtain `log_p`.
+4. For each valid target `y`, compute:
+
+   ```text
+   (1−epsilon) × (−log_p[y]) + epsilon × mean_v(−log_p[v])
+   ```
+
+5. Average valid token losses **within each sequence**.
+6. Average those sequence means over **nonempty sequences**.
+
+**Edge cases and requirements:**
+
+- The uniform smoothing term includes the correct token.
+- Exclude sequences with no valid shifted targets.
+- If no valid shifted targets remain, including when `length=1`, return a **differentiable scalar zero** on the logits device.
+- Preserve gradients.
+- Reject `epsilon` outside `[0,1]` or nonfinite `epsilon`.
+- Derive the objective using tensor operations and log-softmax.
+- Do **not** call `CrossEntropyLoss` or `functional.cross_entropy` in your implementation. The public checks may use them as an independent oracle.
+- Never gather a vocabulary element using label `-100`.
 
 ### Explain and verify
 
-State the loss formula and the meaning of uniform smoothing. Give an arithmetic example with two conversations of unequal target lengths where conversation averaging and a global valid-token mean differ. Include C1 and C2 checker results. Public checks cover representative cases. Grading may use other inputs within these documented contracts.
+**Include in your report:**
+
+- The loss formula and the meaning of uniform smoothing.
+- An arithmetic example with two conversations of unequal target lengths, showing how conversation averaging differs from a global valid-token mean.
+- Your C1 and C2 checker results.
+
+**Grading scope:** Public checks cover representative cases. Grading may use other inputs within these documented contracts.
 
 ## Part D: Fine-tuning and grounded-format evaluation
 
-35 marks | Use `HuggingFaceTB/SmolLM2-135M` and the prepared FAQ data. Three training phrasings are provided per fact. The 20 evaluation prompts use a different question framing, but their facts appear in training and in the evaluation prompts. This tests responses to supplied evidence, not knowledge of unseen facts.
+**35 marks**
+
+- **Model:** `HuggingFaceTB/SmolLM2-135M`.
+- **Data:** Use the prepared FAQ data, with three training phrasings per fact.
+- **Evaluation:** The 20 evaluation prompts use a different question framing. Their facts appear in both the training data and the evaluation prompts.
+- **What this tests:** Responses to supplied evidence, not knowledge of unseen facts.
 
 ### D1: Complete one run (15 marks)
+
+**Run:**
 
 ```bash
 python train.py --steps 100 --output checkpoint
 ```
 
-Complete **100 optimizer updates** and use the final checkpoint. Each update accumulates gradients from eight one-conversation micro-batches. An update is not one example or one epoch. Fixed settings are seed 4221, sequence length 256, learning rate 2e-5, epsilon 0.1, and effective batch size 8. Smaller `--steps` values are for debugging and do not count as a completed graded experiment.
+**Required run:**
 
-Report actual hardware, completed updates, usable examples after truncation, initialization, and batch/length/learning-rate/smoothing settings from `checkpoint/run_config.json`. Plot `checkpoint/loss.csv`. Explain how the encoder and your C1 mask preserve earlier dialogue while supervising the final response. Do not tune the settings or select an intermediate checkpoint.
+- Complete **100 optimizer updates** and use the **final checkpoint**.
+- Each update accumulates gradients from eight one-conversation micro-batches.
+- An update is not one example or one epoch.
+- Smaller `--steps` values are for debugging. They do not count as a completed graded experiment.
+- Do not tune the settings or select an intermediate checkpoint.
 
-The runner prints progress and saves recovery state every 25 updates. `START_HERE.md` explains how to resume to a total of 100. If resources block completion, contact the course staff early and preserve logs. Any alternative run length must follow a course-approved accommodation.
+**Fixed settings:**
+
+| Setting | Value |
+| --- | --- |
+| Seed | 4221 |
+| Sequence length | 256 |
+| Learning rate | 2e-5 |
+| Epsilon | 0.1 |
+| Effective batch size | 8 |
+
+**Include in your report:**
+
+- Actual hardware, completed updates, usable examples after truncation, and initialization from `checkpoint/run_config.json`.
+- Batch, sequence-length, learning-rate, and smoothing settings from the same file.
+- A plot of `checkpoint/loss.csv`.
+- An explanation of how the encoder and your C1 mask preserve earlier dialogue while supervising the final response.
+
+**Recovery and resource issues:**
+
+- The runner prints progress and saves recovery state every 25 updates.
+- `START_HERE.md` explains how to resume to a total of 100 updates.
+- If resources block completion, contact the course staff early and preserve logs.
+- Any alternative run length must follow a course-approved accommodation.
 
 ### D2: Compare base and final models (15 marks)
+
+**Run:**
 
 ```bash
 python evaluate.py --model HuggingFaceTB/SmolLM2-135M --output results/base
@@ -115,48 +305,98 @@ python evaluate.py --model checkpoint --output results/sft
 python report_assets.py
 ```
 
-Both evaluations must use the identical 20 prompts, provided encoding, greedy decoding, and 96-new-token cap. Part B is not used here. Each output folder receives `summary.json` and `responses.json`. The helper builds a loss plot and a browser-readable comparison. Write your own interpretation of the results.
+**Use identical evaluation settings for both models:**
 
-A **format pass** requires two lines after trimming outer whitespace:
+- The same 20 prompts.
+- The provided encoding.
+- Greedy decoding.
+- A 96-new-token cap.
 
-- The first starts exactly with `Answer:` followed by a space and nonempty text.
-- The second matches `Source:` followed by a space and an ID such as `F001`.
+**Outputs:**
 
-Internal extra lines, wrong label case, or commentary fail. Outer whitespace alone is ignored.
+- Each evaluation folder receives `summary.json` and `responses.json`.
+- The helper builds a loss plot and a browser-readable comparison.
+- Write your **own interpretation** of the results.
 
-A **grounded-format pass** additionally requires the correct source ID and the expected answer after casefolding and whitespace collapse. Punctuation is significant, so a paraphrase can fail. These are classroom checks, not IFEval. `FAQ.md` gives exact examples. Do not edit, postprocess, or hand-correct generated responses to raise scores.
+**Format pass:** After trimming outer whitespace, a response must contain exactly two lines:
 
-Report both counts out of 20 and rates for both models. Show three paired raw responses and identify their evaluation IDs. Explain why each passes or fails and what changed. If an output is long, quote the relevant lines, label any omission, and keep the complete response in the ZIP.
+- The first starts exactly with `Answer:`, followed by a space and nonempty text.
+- The second matches `Source:`, followed by a space and an ID such as `F001`.
+
+**Format failures:**
+
+- Internal extra lines, wrong label case, or commentary fail.
+- Outer whitespace alone is ignored.
+
+**Grounded-format pass:** A response must pass the format check and also contain:
+
+- The correct source ID.
+- The expected answer after casefolding and whitespace collapse.
+
+**Scoring details:**
+
+- Punctuation is significant, so a paraphrase can fail.
+- These are classroom checks, not IFEval. `FAQ.md` gives exact examples.
+- Do not edit, postprocess, or hand-correct generated responses to raise scores.
+
+**Include in your report:**
+
+- Format-pass and grounded-format-pass counts **out of 20**, and their rates, for both models.
+- Three paired raw responses, with their evaluation IDs.
+- An explanation of why each response passes or fails and what changed between models.
+- For long outputs, quote the relevant lines and label any omission. Keep the complete response in the ZIP.
 
 ### D3: Interpret limitations (5 marks)
 
-Explain why lower training loss need not improve the two discrete rates. Identify one evaluation limitation and propose one follow-up without running it. **No minimum score or improvement is required.** Poor model performance alone does not lose marks.
+**Include in your report:**
+
+- Why lower training loss need not improve the two discrete rates.
+- One evaluation limitation.
+- One proposed follow-up. You do not need to run it.
+
+**No minimum score or improvement is required.** Poor model performance alone does not lose marks.
 
 ## Submission and completion checklist
 
 ### Prepare the report
 
-Submit `report.pdf`, **maximum 5 pages excluding references**, and one code ZIP to Canvas. Include your name, student ID, and UST email. Concise tables and figures are sufficient. Do not paste full code or all 20 outputs into the report.
+- **Submit to Canvas:** `report.pdf` and one code ZIP.
+- **Report limit:** Maximum **5 pages, excluding references**.
+- **Identification:** Include your name, student ID, and UST email.
+- **Presentation:** Concise tables and figures are sufficient. Do not paste full code or all 20 outputs into the report.
+- **Completeness:** Use `REPORT_CHECKLIST.md`.
+- **Cover page and appendix:** Neither is required.
 
-Suggested page allocation:
+**Suggested page allocation:**
 
 - A and B together: about 1 page.
 - C: about 1 page.
 - D configuration and loss: about 1 page.
 - D metrics and examples: about 1–2 pages.
 
-Use `REPORT_CHECKLIST.md` to check completeness. No separate cover page or appendix is required.
-
 ### Collect code and experiment evidence
+
+**Run:**
 
 ```bash
 python checks.py
 python package_submission.py
 ```
 
-The collector creates `submission.zip` and maps the two small files from `checkpoint/` into `experiment/`. It deliberately excludes model weights, `training_state.pt`, model caches, and temporary outputs. Keep your checkpoint locally until grading is complete. Do not upload it. Upload `report.pdf` separately.
+**What the collector does:**
 
-Required ZIP contents:
+- Creates `submission.zip`.
+- Maps the two small files from `checkpoint/` into `experiment/`.
+- Excludes model weights, `training_state.pt`, model caches, and temporary outputs.
+
+**What you must do:**
+
+- Keep your checkpoint locally until grading is complete. **Do not upload it.**
+- Upload `report.pdf` separately.
+- Inspect the ZIP before uploading.
+- Include any additional code dependencies you introduced.
+
+**Required ZIP contents:**
 
 - `student_tasks.py`.
 - All supplied Python runners and any helper code you changed or added.
@@ -166,31 +406,44 @@ Required ZIP contents:
 - `results/base/summary.json` and `results/base/responses.json`.
 - `results/sft/summary.json` and `results/sft/responses.json`.
 
-Training and evaluation JSON files can be regenerated with `prepare_data.py` and need not be uploaded.
+**Additional notes:**
 
-If you used different output folder names, pass `--checkpoint`, `--base`, and `--sft` to the collector and plotting helper. Neither helper completes TODOs or validates correctness. Inspect your ZIP before uploading and include any additional code dependencies you introduced.
+- Training and evaluation JSON files can be regenerated with `prepare_data.py` and need not be uploaded.
+- If you used different output folder names, pass `--checkpoint`, `--base`, and `--sft` to the collector and plotting helper.
+- Neither helper completes TODOs or validates correctness.
 
 ### How your work is assessed
 
-Part A awards 10 marks for the two functions and 5 for counts, examples, and interpretation. Part B awards 15 for the implementation and 5 for the worked example, explanation, and checks. Part C awards 15 each for final-response supervision and the smoothed objective, including the requested explanations and validation.
+| Part | Marks | Assessment criteria |
+| --- | ---: | --- |
+| A1 | 10 | The two functions |
+| A2 | 5 | Counts, normalization examples, and interpretation |
+| B1 | 15 | The implementation |
+| B2 | 5 | Worked example, explanation, and checks |
+| C1 | 15 | Final-response supervision, requested explanations, and validation |
+| C2 | 15 | Smoothed objective, requested explanations, and validation |
+| D1 | 15 | Reproducible completed run, configuration, loss plot, and encoding explanation |
+| D2 | 15 | Matched evaluation, accurate metrics, and three interpreted pairs |
+| D3 | 5 | Limitations and a follow-up proposal |
 
-Part D awards:
+**Grading principles:**
 
-- 15 marks for a reproducible completed run, configuration, loss plot, and encoding explanation.
-- 15 marks for the matched evaluation, accurate metrics, and three interpreted pairs.
-- 5 marks for limitations and a follow-up proposal.
-
-Additional runs do not earn bonus marks. Public-check passes do not replace the report evidence or guarantee full implementation credit.
-
-The same documented contracts apply to public and additional grading tests. You are not assessed on undocumented malformed inputs. Markers award credit for each criterion independently, so a bug in one function does not automatically zero unrelated parts. Report incomplete work honestly and include any available evidence.
+- Additional runs do not earn bonus marks.
+- Public-check passes do not replace report evidence or guarantee full implementation credit.
+- Public and additional grading tests follow the same documented contracts. You are not assessed on undocumented malformed inputs.
+- Markers award credit for each criterion independently. A bug in one function does not automatically zero unrelated parts.
+- Report incomplete work honestly and include any available evidence.
 
 ### Final self-check
 
-- Can you rerun the scripts from the extracted folder?
-- Do all five TODOs have your implementation?
-- Do the run configuration and loss log show 100 completed updates?
-- Are both evaluations complete with the same 20 prompt IDs?
-- Do your report’s counts match the JSON?
-- Does the ZIP contain the small experiment logs, with no model weights?
+- [ ] I can rerun the scripts from the extracted folder.
+- [ ] All five TODOs have my implementation.
+- [ ] The run configuration and loss log show 100 completed updates.
+- [ ] Both evaluations are complete and use the same 20 prompt IDs.
+- [ ] The report’s counts match the JSON.
+- [ ] The ZIP contains the small experiment logs and no model weights.
 
-Work individually and follow published course policy. Briefly disclose any permitted AI assistance and verify all code and reported results. Finally, ask assignment questions that you may have through the course Canvas channel. :)
+### Course policy and questions
+
+- Work individually and follow the published course policy. Briefly disclose any permitted AI assistance.
+- Ask assignment questions through the course Canvas channel.
