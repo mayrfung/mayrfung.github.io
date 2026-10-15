@@ -1,12 +1,10 @@
 # COMP4221 Programming Assignment
 
-*Preparing and evaluating a structured campus FAQ assistant*
-
 Instructor: Yi R. (May) Fung | Fall 2026 | Total: 100 marks | **Due date: Nov 7th**
 
 Build a small assistant that answers questions from supplied facts and returns each answer with its source ID, such as `F001`. You will clean structured records, implement nucleus probability filtering, select training targets, compute a smoothed loss, and run one short fine-tuning experiment.
 
-The campus facts are fictional teaching examples, not HKUST policy. All data and runners are in this package.
+Kindly note that the campus facts are fictional teaching examples, not HKUST policy. All data and runners are in this package.
 
 ## What you will complete
 
