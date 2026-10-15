@@ -25,10 +25,9 @@ You will:
 | C | Final-response masking and balanced smoothed loss | 30 |
 | D | One fine-tuning run and matched evaluation | 35 |
 
-- **Your code:** Implement only the **five TODO functions** in `student_tasks.py`.
+- **Your code:** Implement the **five TODO functions** in `student_tasks.py`.
 - **Provided code:** The data builder, encoder, training loop, evaluator, plotting helper, and submission collector are ready to use.
-- **Part B vs. Part D:** Part B is a separate probability exercise. Part D uses greedy decoding and does not use Part B.
-
+- 
 ## Start here
 
 ### Set up and run your first check
@@ -361,18 +360,7 @@ python report_assets.py
 ### Prepare the report
 
 - **Submit to Canvas:** `report.pdf` and one code ZIP.
-- **Report limit:** Maximum **5 pages, excluding references**.
-- **Identification:** Include your name, student ID, and UST email.
-- **Presentation:** Concise tables and figures are sufficient. Do not paste full code or all 20 outputs into the report.
-- **Completeness:** Use `REPORT_CHECKLIST.md`.
-- **Cover page and appendix:** Neither is required.
-
-**Suggested page allocation:**
-
-- A and B together: about 1 page.
-- C: about 1 page.
-- D configuration and loss: about 1 page.
-- D metrics and examples: about 1–2 pages.
+- **Presentation:** Do not paste full code or all 20 outputs into the report - concise tables and figures, along with elaboration/explanation, are sufficient. 
 
 ### Collect code and experiment evidence
 
@@ -412,38 +400,6 @@ python package_submission.py
 - If you used different output folder names, pass `--checkpoint`, `--base`, and `--sft` to the collector and plotting helper.
 - Neither helper completes TODOs or validates correctness.
 
-### How your work is assessed
-
-| Part | Marks | Assessment criteria |
-| --- | ---: | --- |
-| A1 | 10 | The two functions |
-| A2 | 5 | Counts, normalization examples, and interpretation |
-| B1 | 15 | The implementation |
-| B2 | 5 | Worked example, explanation, and checks |
-| C1 | 15 | Final-response supervision, requested explanations, and validation |
-| C2 | 15 | Smoothed objective, requested explanations, and validation |
-| D1 | 15 | Reproducible completed run, configuration, loss plot, and encoding explanation |
-| D2 | 15 | Matched evaluation, accurate metrics, and three interpreted pairs |
-| D3 | 5 | Limitations and a follow-up proposal |
-
-**Grading principles:**
-
-- Additional runs do not earn bonus marks.
-- Public-check passes do not replace report evidence or guarantee full implementation credit.
-- Public and additional grading tests follow the same documented contracts. You are not assessed on undocumented malformed inputs.
-- Markers award credit for each criterion independently. A bug in one function does not automatically zero unrelated parts.
-- Report incomplete work honestly and include any available evidence.
-
-### Final self-check
-
-- [ ] I can rerun the scripts from the extracted folder.
-- [ ] All five TODOs have my implementation.
-- [ ] The run configuration and loss log show 100 completed updates.
-- [ ] Both evaluations are complete and use the same 20 prompt IDs.
-- [ ] The report’s counts match the JSON.
-- [ ] The ZIP contains the small experiment logs and no model weights.
-
 ### Course policy and questions
 
 - Work individually and follow the published course policy. Briefly disclose any permitted AI assistance.
-- Ask assignment questions through the course Canvas channel.
