@@ -18,7 +18,7 @@ Use the supplied package versions before requesting help with reproducibility. T
 
 A CUDA GPU is recommended, but CPU training and evaluation are supported. Runners print the selected device. Use `--device cuda` to require a CUDA GPU (and get a clear error if unavailable), or `--device cpu` to force CPU. On a Mac, the supplied runner uses CPU; MPS is not a required route. Leave about 8 GiB free for model cache, recovery files, and final weights, in addition to the Python environment. Runtime and memory use depend on your machine; start early.
 
-If using a notebook or Colab, select the desired runtime first, extract the ZIP, and change the notebook working directory with `%cd /path/to/COMP4221_Assignment`. Use `%pip install -r requirements.txt` and restart the Python runtime if installation requests it. Shell commands such as `python checks.py` need a leading `!` in notebook cells. Re-enter the assignment folder after a runtime restart. Back up work and recovery files to persistent storage before the session ends; notebook local storage can disappear.
+If using a notebook or Colab, select the desired runtime first, and change the notebook working directory with `%cd /path/to/COMP4221_Assignment`. Use `%pip install -r requirements.txt` and restart the Python runtime if installation requests it. Shell commands such as `python checks.py` need a leading `!` in notebook cells. Re-enter the assignment folder after a runtime restart. Back up work and recovery files to persistent storage before the session ends; notebook local storage can disappear.
 
 ## 2 Implement and check one part at a time
 
