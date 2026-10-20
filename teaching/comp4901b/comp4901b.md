@@ -71,7 +71,7 @@ The lecture schedule below is tentative and subject to change; there may also be
 | [Lecture 12](https://drive.google.com/file/d/1AJXkZXwIE7WmsMDwRn4FQ-XbLsAz4z7w/view?usp=sharing) | 15/10 Thu | LLM Agents and Tool Use | | |
 | Lecture 13 | 20/10 Tue | Synthetic Data, On-Policy Distillation, and Data Synthesis | | |
 | Lecture 14 | 22/10 Thu | TBD | | |
-| Lecture 15 | 27/10 Tue | Midterm Exam (tentative) | | **HW2 Due** |
+| Lecture 15 | 27/10 Tue | TBD | | **HW2 Due** |
 | Lecture 16 | 29/10 Thu | World Models and Environment Simulation | | **HW3 Out** |
 | Lecture 17 | 03/11 Tue | Embodied AI, Vision-Language-Action (VLA), and World Action Models | | |
 | Lecture 18 | 05/11 Thu | LLM Bias and Safety | | |
