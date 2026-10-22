@@ -75,7 +75,7 @@ The lecture schedule below is tentative and subject to change; there may also be
 | Lecture 16 | 29/10 Thu | World Models and Environment Simulation | | **HW3 Out** |
 | Lecture 17 | 03/11 Tue | Embodied AI, Vision-Language-Action (VLA), and World Action Models | | |
 | Lecture 18 | 05/11 Thu | TBD | | |
-| Lecture 19 | 10/11 Tue | LLM Safety, Attack, and Defense | | **HW3 Due** |
-| Lecture 20 | 12/11 Thu | Hallucination and RAG | | |
-| Lecture 21 | 17/11 Tue | RAG and MoE LLMs | | |
+| Lecture 19 | 10/11 Tue | TBD | | **HW3 Due** |
+| Lecture 20 | 12/11 Thu | TBD | | |
+| Lecture 21 | 17/11 Tue | TBD | | |
 | Lecture 22 | 19/11 Thu | MoE LLMs, Vibe Coding, and Review | | |
