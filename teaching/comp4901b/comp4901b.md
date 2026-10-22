@@ -70,11 +70,11 @@ The lecture schedule below is tentative and subject to change; there may also be
 | [Lecture 11](https://drive.google.com/file/d/1oTQO26f85ne-0Ti64vxJjrgKdpL9SIZt/view?usp=sharing) | 13/10 Tue | Deep Reasoning Models and Synthetic Data | | [**HW2 Out**](https://github.com/mayrfung/COMP4901B-LLMs/blob/main/assignment2/) |
 | [Lecture 12](https://drive.google.com/file/d/1AJXkZXwIE7WmsMDwRn4FQ-XbLsAz4z7w/view?usp=sharing) | 15/10 Thu | LLM Agents and Tool Use | | |
 | [Lecture 13](https://drive.google.com/file/d/1b8026I60DZ_lrxKPCQepO4BKF0Q_Ny_z/view?usp=sharing) | 20/10 Tue | RAG | | |
-| Lecture 14 | 22/10 Thu | TBD | | |
+| [Lecture 14](https://drive.google.com/file/d/1R10P_-j8Jetkb80wOTUF5RqP_AuLo_qa/view?usp=sharing) | 22/10 Thu | LLM Bias and Safety | | |
 | Lecture 15 | 27/10 Tue | TBD | | **HW2 Due** |
 | Lecture 16 | 29/10 Thu | World Models and Environment Simulation | | **HW3 Out** |
 | Lecture 17 | 03/11 Tue | Embodied AI, Vision-Language-Action (VLA), and World Action Models | | |
-| Lecture 18 | 05/11 Thu | LLM Bias and Safety | | |
+| Lecture 18 | 05/11 Thu | TBD | | |
 | Lecture 19 | 10/11 Tue | LLM Safety, Attack, and Defense | | **HW3 Due** |
 | Lecture 20 | 12/11 Thu | Hallucination and RAG | | |
 | Lecture 21 | 17/11 Tue | RAG and MoE LLMs | | |
