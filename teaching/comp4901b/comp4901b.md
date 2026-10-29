@@ -72,9 +72,9 @@ The lecture schedule below is tentative and subject to change; there may also be
 | [Lecture 13](https://drive.google.com/file/d/1b8026I60DZ_lrxKPCQepO4BKF0Q_Ny_z/view?usp=sharing) | 20/10 Tue | RAG | | |
 | [Lecture 14](https://drive.google.com/file/d/1R10P_-j8Jetkb80wOTUF5RqP_AuLo_qa/view?usp=sharing) | 22/10 Thu | LLM Bias and Safety | | |
 | [Lecture 15]() | 27/10 Tue | Multimodal LLMs | | **HW2 Due** |
-| Lecture 16 | 29/10 Thu | World Models and Environment Simulation | | **HW3 Out** |
+| [Lecture 16](https://drive.google.com/file/d/1Vnccqc_KlT4xD6AEOZGP0qX51JsPwhwM/view?usp=sharing) | 29/10 Thu | MOEs | | **HW3 Out** |
 | Lecture 17 | 03/11 Tue | Embodied AI, Vision-Language-Action (VLA), and World Action Models | | |
-| Lecture 18 | 05/11 Thu | TBD | | |
+| Lecture 18 | 05/11 Thu | World Models and Environment Simulation | | |
 | Lecture 19 | 10/11 Tue | TBD | | **HW3 Due** |
 | Lecture 20 | 12/11 Thu | TBD | | |
 | Lecture 21 | 17/11 Tue | TBD | | |
