@@ -78,4 +78,4 @@ The lecture schedule below is tentative and subject to change; there may also be
 | Lecture 19 | 10/11 Tue | Embodied AI, Vision-Language-Action (VLA), and World Action Models | | **HW3 Due** |
 | Lecture 20 | 12/11 Thu | World Models and Environment Simulation | | |
 | Lecture 21 | 17/11 Tue | TBD | | |
-| Lecture 22 | 19/11 Thu | MoE LLMs, Vibe Coding, and Review | | |
+| Lecture 22 | 19/11 Thu | Vibe Coding, and Review | | |
