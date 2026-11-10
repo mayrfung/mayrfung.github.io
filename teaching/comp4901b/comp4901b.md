@@ -75,7 +75,7 @@ The lecture schedule below is tentative and subject to change; there may also be
 | [Lecture 16](https://drive.google.com/file/d/1Vnccqc_KlT4xD6AEOZGP0qX51JsPwhwM/view?usp=sharing) | 29/10 Thu | MOEs | | **HW3 Out** |
 | Lecture 17 | 03/11 Tue | Practice Question Review and AI4AI | | |
 | Lecture 18 | 05/11 Thu | Guest Lecture - Parsimonious Model Adaptation | | **HW2 Due** |
-| Lecture 19 | 10/11 Tue | Embodied AI, Vision-Language-Action (VLA), and World Action Models | | **HW3 Due** |
+| [Lecture 19](https://drive.google.com/file/d/112dRPlk_vdILA8XQ_TWFv07SPlCOtKmU/view?usp=sharing) | 10/11 Tue | Agent Harness | | **HW3 Out** |
 | Lecture 20 | 12/11 Thu | World Models and Environment Simulation | | |
 | Lecture 21 | 17/11 Tue | TBD | | |
 | Lecture 22 | 19/11 Thu | Vibe Coding, and Review | | |
