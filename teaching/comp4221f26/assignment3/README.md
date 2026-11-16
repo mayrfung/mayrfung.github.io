@@ -1,4 +1,4 @@
-# COMP4901B Homework 4 - AIME Math Problem Solver with Python Tool
+# COMP4221 Homework 3 - AIME Math Problem Solver with Python Tool
 
 **Due Date: 2025-12-5 11:59 PM**
 
