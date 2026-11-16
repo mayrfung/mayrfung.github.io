@@ -72,10 +72,10 @@ The lecture schedule below is tentative and subject to change; there may also be
 | [Lecture 13](https://drive.google.com/file/d/1b8026I60DZ_lrxKPCQepO4BKF0Q_Ny_z/view?usp=sharing) | 20/10 Tue | RAG | | |
 | [Lecture 14](https://drive.google.com/file/d/1R10P_-j8Jetkb80wOTUF5RqP_AuLo_qa/view?usp=sharing) | 22/10 Thu | LLM Bias and Safety | | |
 | [Lecture 15]() | 27/10 Tue | Multimodal LLMs | |  |
-| [Lecture 16](https://drive.google.com/file/d/1Vnccqc_KlT4xD6AEOZGP0qX51JsPwhwM/view?usp=sharing) | 29/10 Thu | MOEs | | **HW3 Out** |
+| [Lecture 16](https://drive.google.com/file/d/1Vnccqc_KlT4xD6AEOZGP0qX51JsPwhwM/view?usp=sharing) | 29/10 Thu | MOEs | |  |
 | Lecture 17 | 03/11 Tue | Practice Question Review and AI4AI | | |
 | Lecture 18 | 05/11 Thu | Guest Lecture - Parsimonious Model Adaptation | | **HW2 Due** |
-| [Lecture 19](https://drive.google.com/file/d/112dRPlk_vdILA8XQ_TWFv07SPlCOtKmU/view?usp=sharing) | 10/11 Tue | Agent Harness | | **HW3 Out** |
-| [Lecture 20](https://drive.google.com/file/d/12o6FnGXLZt02-F1EoniIofvC-TZCgBOF/view?usp=sharing) | 12/11 Thu | Test-Time Training (TTT) and OPD | | |
+| [Lecture 19](https://drive.google.com/file/d/112dRPlk_vdILA8XQ_TWFv07SPlCOtKmU/view?usp=sharing) | 10/11 Tue | Agent Harness | |  |
+| [Lecture 20](https://drive.google.com/file/d/12o6FnGXLZt02-F1EoniIofvC-TZCgBOF/view?usp=sharing) | 12/11 Thu | Test-Time Training (TTT) and OPD | | [**HW3 Out**](https://github.com/hkust-nlp/COMP4901B-LLMs/tree/main/assignment3)|
 | Lecture 21 | 17/11 Tue | TBD | | |
 | Lecture 22 | 19/11 Thu | Vibe Coding, and Review | | |
