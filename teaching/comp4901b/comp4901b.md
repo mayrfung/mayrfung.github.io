@@ -80,4 +80,4 @@ The lecture schedule below is tentative and subject to change; there may also be
 | Lecture 21 | 17/11 Tue | TBD | | |
 | Lecture 22 | 19/11 Thu | Decoding Efficiency and Cost Effectiveness (Diffusion LLM, CostBench, AdaPlanBench) | | |
 | [Lecture 23](https://docs.google.com/presentation/d/1BE5fDBWaz1n-uMEGmdQ1Oqq6SgCMNWqc/edit?usp=sharing&ouid=113415849915646976380&rtpof=true&sd=true) | 24/11 Tue | How to RSI (Almost) Anything | | |
-| Lecture 24 | 26/11 Thu | Vibe Coding, and Review | | **Final Project Due** (Dec 20th) |
+| [Lecture 24](https://drive.google.com/file/d/1a4M5BkfVfXO05Y2ohCLCy3IY-vJWg1MO/view?usp=sharing) | 26/11 Thu | Course Review | | **Final Project Due** (Dec 20th) |
